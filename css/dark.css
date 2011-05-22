@@ -1,0 +1,148 @@
+body {
+	background: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #464032;
+	margin-right: 20%;
+	margin-left: 20%;
+	width: 800px;
+	height: 100%;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	color: #333333;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+#prose_block {
+	width: 100%;
+	padding: 30px 0px 0px 0px;
+	line-height: 150%;
+}
+
+.jedenpost {
+	margin-bottom: 15px;
+	padding-left: 5px;
+}
+
+.jedenpost .tytul {
+	margin-bottom: 10px;
+	padding: 12px 0 0 0px;
+	letter-spacing: -1px;
+	font-variant: small-caps;
+    line-height: 5mm;
+}
+
+.tresc {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+    text-indent: 1cm;
+}
+
+.jedenpost .pubdate {
+	font-size: small;
+	font-style: italic;
+	float: left;
+}
+
+.jedenpost:hover {
+	background-color: #202020;
+	color: #ffffff;
+}
+
+#logo {
+	float: left;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#mainmenu {
+	width: 100%;
+	height: 63px;
+	margin: 0 auto;
+	padding: 0;
+	background: repeat-x left top;
+}
+
+#mainmenu ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#mainmenu a {
+	display: block;
+	height: 26px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	padding: 10px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+#mainmenu a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#mainmenu a {
+	color: #FFFFFF;
+	}
+
+#footer {
+	font-size: 10px;
+	margin: 30px 0px 0px 0px;
+	}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+a {
+	color: #7A998D;
+}
+
+.cv-small {
+	font-size: 10px;
+}
+
+table.docutils {
+	border-width: 0px;
+	border-spacing: 2px;
+}
+table.docutils th {
+	border-width: 0px;
+	padding: 3px;
+}
+table.docutils td {
+	border-width: 0px;
+	padding: 3px;
+	}
