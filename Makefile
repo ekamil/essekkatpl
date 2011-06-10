@@ -25,10 +25,7 @@ deploy_lao:
 	echo "Deploying to laohost.net"
 	echo "Changing site URL to essekkat.pl"
 	sed -i 's|site.url = .*|site.url = "http://essekkat.pl"|' _config.py
-	#make tar
 	echo "SSH to laohost.net"
-	#scp site.tar.gz lao:
-	#ssh lao 'tar -xzf site.tar.gz -C public_html'
 	rsync -av _site/ lao:public_html/
 	ssh lao 'chmod -R 755 public_html'
 	echo "Deployed to laohost.net"
@@ -37,13 +34,16 @@ deploy_akson:
 	echo "Deploying to akson.sgh.waw.pl"
 	echo "Changing site URL to akson.sgh.waw.pl/~ke48003"
 	sed -i 's|site.url = .*|site.url = "http://akson.sgh.waw.pl/~ke48003"|' _config.py
-	#make tar
 	echo "SSH to akson.sgh.waw.pl"
-	#scp site.tar.gz akson:
-	#ssh akson 'cd WWW;gunzip -cd ../site.tar.gz | tar xf -'
 	rsync -av _site/ akson:WWW/
 	ssh akson 'fixWWWperm'
 	echo "Deployed to akson"
+
+deploy_local:
+	echo "Deploying to localhost/site"
+	echo "Changing site URL to localhost/site"
+	sed -i 's|site.url = .*|site.url = "http://localhost/site"|' _config.py
+	rsync -av _site/ ~/WWW/site/
 
 deploy:
 	make deploy_lao
