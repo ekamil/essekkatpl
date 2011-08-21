@@ -3,8 +3,7 @@
 Mail: <a href="mailto:kamil [at] essekkat.pl">kamil[at]essekkat.pl</a><br />
 Jabber: <a href="xmpp:kamil.e@jabbim.com">kamil.e@jabbim.com</a>
 <img src="http://netlab.cz/status/?jid=kamil.e@jabbim.com&amp;ib=bulb" alt="Wskaźnik statusu"/> <br />
-Komórka: <a href="callto:+48505676706" style="text-weight:bold">+48 507 288 902</a><br />
-<a href="callto:+48505676706" style="text-decoration:line-through;">+48 505 676 706</a>
+Komórka: <a href="callto:+48505676706" style="text-weight:bold">+48 505 676 706</a><br />
  <br />
 <h3>PGP</h3>
  Wysyłając do mnie maile użyj <a href="http://en.wikipedia.org/wiki/Pretty_Good_Privacy">PGP</a>.

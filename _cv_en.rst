@@ -3,7 +3,7 @@ Kamil Essekkat
 ================================
 
 :Date of birth: 16.03.1990
-:Tel.: +48 507 288 902
+:Tel.: +48 505 676 706
 :E-mail: kamil@essekkat.pl
 :Web-site: `<http://www.essekkat.pl/en>`_
 
