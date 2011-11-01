@@ -25,9 +25,9 @@ Foreign languages:
 Skills:
 -------------
 
-:Programming languages: Python(3), sh(3), SQL(2), JavaScript(2)
+:Programming languages: Python(3), sh(3), SQL(2), JavaScript(2), Java(1)
 
-:Operating Systems: GNU/Linux(3), Windows(2)
+:Operating Systems: GNU/Linux(3), Windows(2), AIX
 
 **Known technologies/products:**
 
@@ -56,7 +56,7 @@ Experience:
 
 :2010: wcinamy.pl – Django-based site to search for restaurants, with sorting based on distance.
 
-:10.2010-now: Internship at Accenture. Communication & High-tech.
+:10.2010-now: Accenture – technical architecture team member; efficiency tests.
 
 .. raw:: pdf
 

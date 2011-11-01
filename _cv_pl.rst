@@ -27,10 +27,10 @@ Umiejętności:
 -------------
 
 :Języki programowania:
-    Python(3), sh(3), SQL(2), JavaScript(2)
+    Python(3), sh(3), SQL(2), JavaScript(2), Java(1)
 
 :Systemy operacyjne:
-    GNU/Linux(3), Windows(2), HP-UX, AIX
+    GNU/Linux(3), Windows(2), AIX
 
 **Znane technologie/produkty:**
 
@@ -59,7 +59,8 @@ Doświadczenie:
 
 :2010: wcinamy.pl – wyszukiwarka punktów gastronomicznych oparta na Django.
 
-:10.2010-obecnie: Praktyki w Accenture. Dział Communication & High Tech.
+
+:10.2010-obecnie: Accenture – członek zespołu architektury technicznej; testy wydajnościowe.
 
 .. raw:: pdf
 
