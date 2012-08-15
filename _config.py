@@ -70,10 +70,10 @@ site.file_ignore_patterns = [
 ".*/site.tar.gz$",
 ]
 
-## foo - function called before a build starts with no args
-#pre_build = foo
-def get_repo():
-    import os
-    os.popen('rsync -av ../kamil_mod/repository/ _site/repository')
+# ## foo - function called before a build starts with no args
+# #pre_build = foo
+# def get_repo():
+#     import os
+#     os.popen('rsync -av ../kamil_mod/repository/ _site/repository')
 
-post_build = get_repo
+# post_build = get_repo

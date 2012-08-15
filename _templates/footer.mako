@@ -17,10 +17,6 @@ Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br />
         src="${bf.util.site_path_helper('images/vcss-blue')}"
         alt="Poprawny CSS!" />
 </a>
-<a href="http://petition.stopsoftwarepatents.eu/491006640910/"><img
-src="http://petition.stopsoftwarepatents.eu/banner/491006640910/ssp-362-60.gif"
-alt="stopsoftwarepatents.eu petition banner"
-width="362" height="60" /></a> 
 </p>
 % if bf.config.blog.disqus.enabled:
 <script type="text/javascript">
