@@ -33,7 +33,8 @@ deploy_local:
 	echo "Changing site URL to localhost/site"
 	sed -i 's|site.url = .*|site.url = "http://localhost/site"|' _config.py
 	make build
-	rsync -av _site/ ~/WWW/site/
+	rsync -r _site/ /var/www/html/site/
+	chmod -R a+rX /var/www/html/site
 
 deploy:
 	make deploy_lao
