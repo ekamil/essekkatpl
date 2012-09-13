@@ -35,6 +35,7 @@ deploy_local:
 	make build
 	rsync -r _site/ /var/www/html/site/
 	chmod -R a+rX /var/www/html/site
+	rsync -r _site/ /home/kamil/public_html/site/
 
 deploy:
 	make deploy_lao
