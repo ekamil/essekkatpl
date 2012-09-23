@@ -28,6 +28,16 @@ deploy_lao:
 	ssh lao 'chmod -R 755 public_html'
 	echo "Deployed to laohost.net"
 
+deploy_megi:
+	echo "Deploying to laohost.net"
+	echo "Changing site URL to www1.hertz.megiteam.pl"
+	sed -i 's|site.url = .*|site.url = "http://www1.hertz.megiteam.pl"|' _config.py
+	make build
+	echo "SSH to hertz"
+	rsync -av _site/ hertz:essekkat.pl/
+	ssh hertz 'chmod -R 755 ~/essekkat.pl'
+	echo "Deployed to megiteam"
+
 deploy_local:
 	echo "Deploying to localhost/site"
 	echo "Changing site URL to localhost/site"
