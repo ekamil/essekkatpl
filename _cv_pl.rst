@@ -10,9 +10,10 @@ Kamil Essekkat
 Wykształcenie:
 --------------
 
-:2009-obecnie:
+:2009-2012:
     | Studia stacjonarne licencjackie w Szkole Głównej Handlowej w Warszawie
     | kierunek Metody Ilościowe w Ekonomii i Systemy Informacyjne
+    | przerwane
 
 :2006-2009: VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
 
@@ -27,7 +28,7 @@ Umiejętności:
 -------------
 
 :Języki programowania:
-    Python(3), sh(3), SQL(2), JavaScript(2), Java(1)
+    Python(3), sh(3), SQL(2), JavaScript(2), Java(1), PL/SQL(1)
 
 :Systemy operacyjne:
     GNU/Linux(3), Windows(2), AIX
@@ -60,7 +61,9 @@ Doświadczenie:
 :2010: wcinamy.pl – wyszukiwarka punktów gastronomicznych oparta na Django.
 
 
-:10.2010-obecnie: Accenture – członek zespołu architektury technicznej; testy wydajnościowe.
+:10.2010-obecnie: Accenture – członek zespołu architektury technicznej.
+ | Zarządzanie serwerami aplikacyjnymi, bazami danych. Prowadzenie testów wydajnościowych.
+ | Zarządzanie i dostosowywanie narzędzi wspomagających development aplikacji.
 
 .. raw:: pdf
 
