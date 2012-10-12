@@ -62,8 +62,8 @@ Doświadczenie:
 
 
 :10.2010-obecnie: Accenture – członek zespołu architektury technicznej.
-    | Zarządzanie serwerami aplikacyjnymi, bazami danych. Prowadzenie testów wydajnościowych.
-    | Zarządzanie i dostosowywanie narzędzi wspomagających development aplikacji.
+    Zarządzanie serwerami aplikacyjnymi, bazami danych. Prowadzenie testów wydajnościowych.
+    Zarządzanie i dostosowywanie narzędzi wspomagających development aplikacji.
 
 
 .. raw:: pdf
