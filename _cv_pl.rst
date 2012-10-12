@@ -5,7 +5,6 @@ Kamil Essekkat
 :Data urodzenia: 16.03.1990
 :Tel.: +48 505 676 706
 :E-mail: kamil@essekkat.pl
-:Strona WWW: `<http://www.essekkat.pl>`_
 
 Wykształcenie:
 --------------
@@ -13,7 +12,7 @@ Wykształcenie:
 :2009-2012:
     | Studia stacjonarne licencjackie w Szkole Głównej Handlowej w Warszawie
     | kierunek Metody Ilościowe w Ekonomii i Systemy Informacyjne
-    | przerwane
+    | (przerwane)
 
 :2006-2009: VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
 
@@ -31,7 +30,7 @@ Umiejętności:
     Python(3), sh(3), SQL(2), JavaScript(2), Java(1), PL/SQL(1)
 
 :Systemy operacyjne:
-    GNU/Linux(3), Windows(2), AIX
+    GNU/Linux(3), Windows(2), AIX(1)
 
 **Znane technologie/produkty:**
 
@@ -58,12 +57,12 @@ Prawo jazdy kat. B. Umiejętność pracy w zespole.
 Doświadczenie:
 ---------------
 
-:2010: wcinamy.pl – wyszukiwarka punktów gastronomicznych oparta na Django.
+:10.2010-obecnie: Accenture – praca w zespole architektury technicznej.
 
-
-:10.2010-obecnie: Accenture – członek zespołu architektury technicznej.
     Zarządzanie serwerami aplikacyjnymi, bazami danych. Prowadzenie testów wydajnościowych.
     Zarządzanie i dostosowywanie narzędzi wspomagających development aplikacji.
+
+:2010: wcinamy.pl – wyszukiwarka punktów gastronomicznych oparta na Django.
 
 
 .. raw:: pdf
@@ -73,8 +72,8 @@ Doświadczenie:
 Działalność studencka:
 -----------------------
 
-:2009-obecnie:
-    Działalność w Studenckim Kole Naukowym Informatyki przy SGH w Warszawie
+:2009-2010:
+    Działalność w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie
 
 :05.2010:               współorganizacja konferencji OpenMind
 
