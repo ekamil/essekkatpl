@@ -1,7 +1,5 @@
 #.SILENT:
-all:
-	make clean-remotes
-	make deploy_lao
+all: deploy-lao deb-repo
 
 build:
 	blogofile 'build'
@@ -11,34 +9,17 @@ build:
 serve:
 	blogofile serve 8080
 
-tar:
-	make build
-	tar -czf `pwd`/site.tar.gz -C _site/ .
-
-clean-remotes:
-	ssh lao 'rm -rf public_html/*'
-
-deploy_lao:
+deploy-lao:
 	echo "Deploying to laohost.net"
 	echo "Changing site URL to essekkat.pl"
 	sed -i 's|site.url = .*|site.url = "http://essekkat.pl"|' _config.py
-	make build
+	$(MAKE) build
 	echo "SSH to laohost.net"
-	rsync -av _site/ lao:public_html/
+	rsync --delete-before --exclude 'debian/'  -rv _site/ lao:public_html/
 	ssh lao 'chmod -R 755 public_html'
 	echo "Deployed to laohost.net"
 
-deploy_megi:
-	echo "Deploying to laohost.net"
-	echo "Changing site URL to www1.hertz.megiteam.pl"
-	sed -i 's|site.url = .*|site.url = "http://www1.hertz.megiteam.pl"|' _config.py
-	make build
-	echo "SSH to hertz"
-	rsync -av _site/ hertz:essekkat.pl/
-	ssh hertz 'chmod -R 755 ~/essekkat.pl'
-	echo "Deployed to megiteam"
-
-deploy_local:
+deploy-local:
 	echo "Deploying to localhost/site"
 	echo "Changing site URL to localhost/site"
 	sed -i 's|site.url = .*|site.url = "http://localhost/site"|' _config.py
@@ -47,11 +28,14 @@ deploy_local:
 	chmod -R a+rX /var/www/html/site
 	rsync -r _site/ /home/kamil/public_html/site/
 
-deploy:
-	make deploy_lao
-	make deploy_local
+deploy: deploy-lao deploy-local
+
+deb-repo:
+	rsync --delete-before -rv ~/public_html/debian/db/ lao:public_html/debian/db/
+	rsync --delete-before -rv ~/public_html/debian/dists/ lao:public_html/debian/dists/
+	rsync --delete-before -rv ~/public_html/debian/pool/ lao:public_html/debian/pool/
 
 .PHONY: all
 .PHONY: serve
 .PHONY: tar
-.SILENT: deploy_lao
+.SILENT: deploy-lao
