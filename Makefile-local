@@ -1,0 +1,12 @@
+include Makefile
+
+URL      := http://localhost/site 
+WWW_PATH := ~/public_html
+
+deploy: _site
+	sed -i 's|site.url = .*|site.url = "$(URL)"|' _config.py
+	$(RSYNC) --exclude 'debian/' _site/ $(WWW_PATH)/
+	chmod -R 755 $(WWW_PATH)
+
+clean-remote:
+	rm -r $(WWW_PATH)/*
