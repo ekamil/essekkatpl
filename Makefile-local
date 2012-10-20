@@ -1,7 +1,7 @@
 include Makefile
 
 URL      := http://localhost/site 
-WWW_PATH := ~/public_html
+WWW_PATH := /var/www/html/site
 
 deploy: _site
 	sed -i 's|site.url = .*|site.url = "$(URL)"|' _config.py

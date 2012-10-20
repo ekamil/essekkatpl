@@ -19,7 +19,7 @@
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site.url = "http://essekkat.pl"
+site.url = "http://essekkat.pl "
 
 #### Blog Settings ####
 blog = controllers.blog
@@ -66,7 +66,7 @@ site.file_ignore_patterns = [
 ".*/\.(git|hg|svn|bzr)$",
 ".*/.(git|hg)ignore$",
 ".*/CVS$",
-".*/Makefile$",
+".*/Makefile*$",
 ".*/site.tar.gz$",
 ]
 
