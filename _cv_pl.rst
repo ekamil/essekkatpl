@@ -12,7 +12,7 @@ Wykształcenie:
 :2009-2012:
     | Studia stacjonarne licencjackie w Szkole Głównej Handlowej w Warszawie
     | kierunek Metody Ilościowe w Ekonomii i Systemy Informacyjne
-    | (przerwane)
+    | (rezygnacja)
 
 :2006-2009: VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
 
@@ -21,7 +21,7 @@ Języki obce:
 
 :Angielski: biegle w mowie i w piśmie
 
-:Niemiecki: poziom komunikatywny
+:Niemiecki: poziom dobry
 
 Umiejętności:
 -------------
