@@ -19,7 +19,7 @@
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site.url = "http://essekkat.pl"
+site.url = "http://www1.hertz.megiteam.pl "
 
 #### Blog Settings ####
 blog = controllers.blog
@@ -59,15 +59,15 @@ blog.post_default_filters = {
 }
 
 site.file_ignore_patterns = [
-".*/_.*",
-".*/#.*",
-".*~$",
-".*/\..*\.swp$",
-".*/\.(git|hg|svn|bzr)$",
-".*/.(git|hg)ignore$",
-".*/CVS$",
-".*/Makefile*$",
-".*/site.tar.gz$",
+    ".*/_.*",
+    ".*/#.*",
+    ".*~$",
+    ".*/\..*\.swp$",
+    ".*/\.(git|hg|svn|bzr)$",
+    ".*/.(git|hg)ignore$",
+    ".*/CVS$",
+    ".*/Makefile*$",
+    ".*/site.tar.gz$",
 ]
 
 # ## foo - function called before a build starts with no args
