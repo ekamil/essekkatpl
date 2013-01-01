@@ -1,18 +1,13 @@
 include Makefile
 
 SSH_HOST := lao
-URL      := http://essekkat.pl 
+URL      := http://essekkat.pl
 
 WWW_PATH := ~/public_html
-DEB_PATH := $(WWW_PATH)/debian
-DEB_LOCAL:= ~/public_html/debian
 
 deploy: _site
 	sed -i 's|site.url = .*|site.url = "$(URL)"|' _config.py
 	$(RSYNC) --exclude 'debian/' _site/ $(SSH_HOST):$(WWW_PATH)/
-	ssh $(SSH_HOST) 'mkdir -p $(DEB_PATH)/dists/ $(DEB_PATH)/pool/'
-	$(RSYNC) $(DEB_LOCAL)/dists/ $(SSH_HOST):$(DEB_PATH)/dists/
-	$(RSYNC) $(DEB_LOCAL)/pool/ $(SSH_HOST):$(DEB_PATH)/pool/
 	ssh $(SSH_HOST) 'chmod -R 755 $(WWW_PATH)/'
 
 clean-remote:
