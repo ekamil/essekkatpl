@@ -4,7 +4,7 @@ RSYNC    := rsync --delete-before -r
 CV_LIST   = pl en
 
 MEGI_SSH_HOST := hertz
-MEGI_URL      := http://www1.hertz.megiteam.pl 
+MEGI_URL      := http://www1.hertz.megiteam.pl
 MEGI_WWW_PATH := ~/essekkat.pl
 
 LAO_SSH_HOST := lao
@@ -25,16 +25,18 @@ deploy: deploy-lao deploy-megi
 
 clean-remote: clean-remote-lao clean-remote-megi
 
-deploy-megi: _site
+deploy-megi:
 	sed -i 's|site.url = .*|site.url = "$(MEGI_URL)"|' www/_config.py
+	$(MAKE) _site
 	$(RSYNC) www/_site/ $(MEGI_SSH_HOST):$(MEGI_WWW_PATH)/
 	ssh $(MEGI_SSH_HOST) 'chmod -R 755 $(MEGI_WWW_PATH)'
 
 clean-remote-megi:
 	ssh $(MEGI_SSH_HOST) 'rm -r $(MEGI_WWW_PATH)/*'
 
-deploy-lao: _site
+deploy-lao:
 	sed -i 's|site.url = .*|site.url = "$(LAO_URL)"|' www/_config.py
+	$(MAKE) _site
 	$(RSYNC) www/_site/ $(LAO_SSH_HOST):$(LAO_WWW_PATH)/
 	ssh $(LAO_SSH_HOST) 'chmod -R 755 $(LAO_WWW_PATH)/'
 
