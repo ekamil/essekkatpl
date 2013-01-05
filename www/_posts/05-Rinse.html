@@ -1,0 +1,25 @@
+---
+categories: Linux
+date: '2013-01-05 10:00:00'
+title: Rinse
+author: Kamil Essekkat
+---
+<h2>Centos 5.8 w schroot</h2>
+<p>/etc/schroot/schroot.conf</p>
+<pre>
+    [centos]
+    description=Centos 5 (i386)
+    directory=/schroots/centos5_32
+    users=kamil,oracle
+    groups=
+    root-users=
+    personality=linux
+    type=directory
+</pre>
+
+<pre>
+rinse --directory centos5 --distribution centos-5 --arch amd64 --cache-dir /schroots/rinse-cache
+cd /schroots/centos5
+chroot .
+mknod -m 644 /dev/urandom c 1 9
+</pre>
