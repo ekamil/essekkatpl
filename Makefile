@@ -18,6 +18,7 @@ dist: clean clean-remote deploy
 
 $(CV_LIST):
 	rst2pdf --compressed --stylesheets=cv.style cv_$@.rst --output=www/files/cv_$@.pdf
+	rst2html --stylesheet-path=www/css/style.css cv_$@.rst www/cv_$@.html
 
 cv: $(CV_LIST)
 
@@ -50,4 +51,6 @@ serve: _site
 	cd www && blogofile serve 8080
 
 clean:	
-	@-rm -r www/_site www/files/cv_*.pdf
+	@-rm -r www/_site
+	@-rm www/files/cv_*.pdf
+	@-rm www/cv_*.html
