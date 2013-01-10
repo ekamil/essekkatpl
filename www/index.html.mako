@@ -7,10 +7,13 @@
 Mail: <a href="mailto:kamil [at] essekkat.pl">kamil[at]essekkat.pl</a><br />
 Jabber: <a href="xmpp:kamil.e@jabbim.com">kamil.e@jabbim.com</a> <br />
 <br />
-CV:
-HTML: <a href="${bf.util.site_path_helper('cv_pl.html')}">PL</a><br />
-PDF: <a href="${bf.util.site_path_helper('files/cv_pl.pdf')}">PL (pdf)</a><br />
+CV (wersja polska) 
+<a href="${bf.util.site_path_helper('cv_pl.html')}">html</a>
+<a href="${bf.util.site_path_helper('files/cv_pl.pdf')}">pdf</a>
 <br />
-HTML: <a href="${bf.util.site_path_helper('cv_en.html')}">EN</a><br />
-PDF: <a href="${bf.util.site_path_helper('files/cv_en.pdf')}">EN (pdf)</a><br />
+<br />
+English version
+<a href="${bf.util.site_path_helper('cv_en.html')}">html</a>
+<a href="${bf.util.site_path_helper('files/cv_en.pdf')}">pdf</a>
+<br />
 <!-- vim: set ts=2 sw=4 tw=0 ft=html:-->
