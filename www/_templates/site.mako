@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
 <title>${bf.config.blog.name}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="openid.server"   href="http://www.myopenid.com/server">
-<link rel="openid.delegate" href="http://KamilEssekkat.myopenid.com/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="openid.server"   href="http://www.myopenid.com/server" />
+<link rel="openid.delegate" href="http://KamilEssekkat.myopenid.com/" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${bf.util.site_path_helper('feed')}" />
 <link rel="shortcut icon" href="${bf.util.site_path_helper('images/favicon.ico')}" type="image/x-icon"/>
 <link rel='stylesheet' href="${bf.util.site_path_helper('css/style.css')}" type='text/css' />
