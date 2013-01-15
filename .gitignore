@@ -1,4 +1,4 @@
-_site
 site.tar.gz
 *.pdf
-/_site
+www/_site
+www/cv_*.html
