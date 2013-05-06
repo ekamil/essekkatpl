@@ -1,8 +1,6 @@
 SHELL       := /usr/bin/zsh
 RSYNC    := rsync --delete-before -r
 
-CV_LIST   = pl en
-
 MEGI_SSH_HOST := hertz
 MEGI_URL      := http://www1.hertz.megiteam.pl
 MEGI_WWW_PATH := ~/essekkat.pl
@@ -11,16 +9,19 @@ LAO_SSH_HOST := lao
 LAO_URL      := http://essekkat.pl
 LAO_WWW_PATH := ~/public_html
 
+CV: www/cv_en.html www/cv_pl.html
+
 
 all: clean cv deploy
 
 dist: clean clean-remote deploy
 
-$(CV_LIST):
-	rst2pdf --compressed --stylesheets=cv.style cv_$@.rst --output=www/files/cv_$@.pdf
-	rst2html --stylesheet-path=www/css/style.css cv_$@.rst www/cv_$@.html
+cv: $(CV)
 
-cv: $(CV_LIST)
+$(CV):
+	cd resume && make
+	cp resume/build/cv* www/
+	touch $(CV)
 
 deploy: deploy-lao deploy-megi
 
@@ -46,6 +47,7 @@ clean-remote-lao:
 
 _site:
 	cd www && blogofile 'build'
+	touch www/_site
 
 serve: _site
 	cd www && blogofile serve 8080
@@ -53,4 +55,5 @@ serve: _site
 clean:	
 	@-rm -r www/_site
 	@-rm www/files/cv_*.pdf
-	@-rm www/cv_*.html
+	@-rm www/cv_*
+	@-rm -r resume/build

@@ -3,13 +3,12 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-<title>${bf.config.blog.name}</title>
+<title>Kamil's site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="openid.server"   href="http://www.myopenid.com/server" />
 <link rel="openid.delegate" href="http://KamilEssekkat.myopenid.com/" />
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${bf.util.site_path_helper('feed')}" />
-<link rel="shortcut icon" href="${bf.util.site_path_helper('images/favicon.ico')}" type="image/x-icon"/>
-<link rel='stylesheet' href="${bf.util.site_path_helper('css/style.css')}" type='text/css' />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href="css/style.css" type='text/css' />
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-17452503-1']);
@@ -23,9 +22,9 @@
   </head>
   <body>
     <div id="content">
-        <div id="mainmenu" style="background: url(${bf.util.site_path_helper('images/tlo2.png')});">
+        <div id="mainmenu" style="background: url('images/tlo2.png');">
         <div id="logo">
-        <h1><a href="${bf.util.site_path_helper()}">${bf.config.blog.name}</a></h1>
+        <h1><a href="${bf.util.site_path_helper()}">Kamil's site</a></h1>
         </div>
         </div>
       <div id="main_block">
@@ -39,12 +38,12 @@ Made with <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software">F
 Template CSS <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
 Powered by <a href="http://www.blogofile.com">Blogofile</a>.<br />
 <a href="http://validator.w3.org/check?uri=referer">
-    <img src="${bf.util.site_path_helper('images/valid-xhtml10-blue.png')}"
+    <img src="images/valid-xhtml10-blue.png"
     alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
 </a>
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img style="border:0;width:88px;height:31px"
-        src="${bf.util.site_path_helper('images/vcss-blue')}"
+        src="images/vcss-blue"
         alt="Poprawny CSS!" />
 </a>
 </p>

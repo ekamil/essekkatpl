@@ -1,5 +1,5 @@
 site.url = "http://www1.hertz.megiteam.pl"
-# blog = controllers.blog
+blog = controllers.blog
 blog.enabled = False
 blog.path = ""
 blog.name = "Kamil's site"
