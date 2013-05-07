@@ -2,8 +2,8 @@ pageSetup:
     size: A4
     width: null
     height: null
-    margin-top: 1cm
-    margin-bottom: 1cm
+    margin-top: 5mm
+    margin-bottom: 5mm
     margin-left: 2cm
     margin-right: 2cm
     margin-gutter: 0cm
