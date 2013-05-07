@@ -3,13 +3,13 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	margin: 0px 20% 0% 20%;
-	min-width:100px;
+	min-width: 100px;
 	height: 100%;
 	padding: 0px 0px 0px 0px;
 	font-family: sans-serif;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
 	font-weight: normal;
 	color: #52483E;
 }
@@ -39,41 +39,10 @@ h3 {
 	background: #B8AFA6;;
 }
 
-#prose_block {
+#main_block {
 	width: 100%;
 	padding: 30px 0px 0px 0px;
 	line-height: 150%;
-}
-
-.jedenpost {
-	margin-bottom: 15px;
-	padding-left: 5px;
-}
-
-.jedenpost .tytul {
-	margin-bottom: 10px;
-	padding: 12px 0 0 0px;
-	letter-spacing: -1px;
-	font-variant: small-caps;
-    line-height: 5mm;
-}
-
-.tresc {
-	padding: 0px 0px 20px 0px;
-	padding-bottom: 20px;
-	text-align: justify;
-    text-indent: 1cm;
-}
-
-.jedenpost .pubdate {
-	font-size: small;
-	font-style: italic;
-	float: left;
-}
-
-.jedenpost:hover {
-	background-color: #202020;
-	color: #ffffff;
 }
 
 #logo {
@@ -88,11 +57,8 @@ h3 {
 #mainmenu {
 	width: 100%;
 	height: 63px;
-/*
-	margin: 0px auto;
-*/
 	padding: 0px 0px 0px 0px;
-	background: repeat-x left top;
+	background: url('background.png') repeat-x left top;
 }
 
 #mainmenu ul li {
@@ -126,12 +92,12 @@ h3 {
 
 #mainmenu a {
 	color: #FFFFFF;
-	}
+}
 
 #footer {
 	font-size: 10px;
 	margin: 30px 0px 0px 0px;
-	}
+}
 
 #footer a {
 	color: #FFFFFF;
@@ -156,18 +122,16 @@ a {
 	border-style: solid;
 }
 
-
 table.docutils {
 	border-width: 0px;
 	border-spacing: 2px;
 }
+
 table.docutils th {
 	border-width: 0px;
 	padding: 3px;
 }
+
 table.docutils td {
-/*
-	border-width: 0px;
-*/
 	padding: 3px;
-	}
+}
