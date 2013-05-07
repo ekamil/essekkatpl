@@ -8,6 +8,20 @@ Kamil Essekkat
 
 Wersje online tego CV: PDF_, HTML_
 
+Doświadczenie
+---------------
+
+:10.2010 |--| obecnie: **Accenture** |--| członek zespołu architektury technicznej
+
+Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie.
+Zarządzanie oraz rozwój wewnętrznych narzędzi wspomagających development - głównie opartych na Pythonie.
+Integracja zewnętrznych narzędzi CI, QA z infrastrukturą projektów.
+Administracja środowiskami testowymi. 
+
+:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python oraz JavaScript
+                    
+Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
+
 Wykształcenie
 --------------
 :2013 |--| obecnie: Studia niestacjonarne inżynierskie na Politechnice Warszawskiej,
@@ -22,14 +36,18 @@ Wykształcenie
 
 Języki obce
 -------------
-:Angielski: biegle w mowie i w piśmie
-:Niemiecki: poziom dobry
+:Angielski: biegle
+:Niemiecki: dobrze
 
 Umiejętności
 -------------
 :Języki programowania: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1)
 
 :Systemy operacyjne: GNU/Linux(3), Windows(2), AIX(1)
+
+.. class:: cv-small
+
+poziom umiejętności: 1 - początkujący, 2 - średniozaawansowany, 3 - zaawansowany
 
 :Zarządzanie kodem: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_
 
@@ -43,41 +61,14 @@ Podstawowa znajomość *SAP* oraz *Oracle BRM* od strony instalacji i konfigurac
 
 Prawo jazdy kat. B. Umiejętność pracy w zespole.
 
-.. class:: cv-small
-
-(*) poziom umiejętności: 1 - początkujący, 2 - średniozaawansowany, 3 - zaawansowany
-
-Doświadczenie
----------------
-
-:10.2010 |--| obecnie: **Accenture** |--| członek zespołu architektury technicznej
-
-Zarządzanie oraz rozwój wewnętrznych narzędzi wspomagających development - głównie opartych na Pythonie.
-Integracja zewnętrznych narzędzi CI, QA z infrastrukturą projektów.
-Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie.
-Administracja środowiskami testowymi. 
-
-:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python oraz JavaScript
-                    
-Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
-
 Działalność studencka
 -----------------------
 
-:2009 |--| 2010:
-    członkowstwo w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie (SKNI_)
+:2009 |--| 2010: Członkowstwo w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie (SKNI_)
 
-:05.2010: 
-    współorganizacja konferencji OpenMind
-
-:05.2010:
-   strona Ideagora SGH – oparta na IdeaTorrent i Drupalu propozycja strony Q&A dla SGH
-
-:03 |--| 04.2010:
-    prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (WAS_)
-
-:2009:
-    współtworzenie strony głównej SKNI_ (Joomla)
+* Prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (WAS_)
+* Współorganizacja konferencji OpenMind
+* Współtworzenie strony głównej SKNI_ (Joomla)
 
 
 .. footer::

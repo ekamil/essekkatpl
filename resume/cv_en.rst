@@ -8,6 +8,20 @@ Kamil Essekkat
 
 This CV online: PDF_, HTML_
 
+Work experience
+---------------
+
+:10.2010 |--| present: **Accenture** |--| member of Technical Architecture Team
+
+Conducting efficiency tests through preparation, automatization and reporting.
+Maintenance and development of internal tools - mainly based on Python.
+Integration of third-party CI/QA tools into projects' infrastructure.
+Maintenance and support of test environments.
+
+:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python & JavaScript
+                    
+Developing Django-based site. Wcinamy.pl was to meant to help find restaurants in a distance-aware way.
+
 Education
 --------------
 :2013 |--| present: Bachelor of Science at Warsaw University of Technology, Faculty of Transport
@@ -15,7 +29,7 @@ Education
 :2009 |--| 2012: Bachelor studies at Warsaw School of Economics,
     Quantitative Methods in Economics and Information Systems. Resigned.
 
-:2006 |--| 2009: VI Highschool in Sosnowiec, math-geo profi
+:2006 |--| 2009: VI Highschool in Sosnowiec, core subjects: maths, geography
 
 Foreign languages
 -----------------
@@ -28,6 +42,10 @@ Skills
 
 :Operating systems: GNU/Linux(3), Windows(2), AIX(1)
 
+.. class:: cv-small
+
+advancement level: 1 - novice, 2 - medium, 3 - advanced
+
 :Code management: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_
 
 :Databases: Oracle, PostgreSQL
@@ -36,40 +54,18 @@ Skills
 
 :Other: OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat Cluster Suite, Zenoss_
 
-Basic knowledge of *SAP* and *Oracle BRM* from operations standpoint.
+Basic knowledge of *SAP* and *Oracle BRM* from operations perpective.
 
 Driver's licence cat. B. Interpersonal skills.
-
-.. class:: cv-small
-
-(*) advancement level: 1 - novice, 2 - medium, 3 - advanced
-
-Work experience
----------------
-
-:10.2010 |--| present: **Accenture** |--| member of Technical Architecture Team
-
-Maintenance and development of internal tools - mainly based on Python.
-Integration of third-party CI/QA tools into projects' infrastructure.
-Conducting efficiency tests through preparation, automatization and reporting.
-Maintenance and support of test environments.
-
-:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python & JavaScript
-                    
-Developing Django-based site. Wcinamy.pl was to meant to help find restaurants in a distance-aware way.
 
 Academic activities
 -----------------------
 
 :2009 |--| 2010: Acitivity in Student Association for Computer Science at WSE (SKNI_)
 
-:05.2010: Co-organisation of the OpenMind conference
-
-:05.2010: Ideagora SGH – based on IdeaTorrent and Drupal Q&A site for WSE
-
-:03 |--| 04.2010: Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI`_.
-
-:2009: co-creation of SKNI_ website (Joomla)
+* Co-organisation of the OpenMind conference
+* Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI`_.
+* Co-creation of SKNI_ website (Joomla)
 
 .. _Sonar: http://www.sonarsource.org/
 .. _Jenkins CI: http://jenkins-ci.org/
