@@ -76,8 +76,8 @@ Academic activities
 .. _Sonatype Nexus: http://www.sonatype.org/nexus/
 .. _Grinder: http://grinder.sourceforge.net/
 .. _Zenoss: http://www.zenoss.com/
-.. _PDF: http://essekkat.pl/cv_pl.pdf 
-.. _HTML: http://essekkat.pl/cv_pl.html
+.. _PDF: http://essekkat.pl/cv_en.pdf 
+.. _HTML: http://essekkat.pl/cv_en.html
 .. _SKNI: http://www.skni.org/
 .. _Warsztaty@SKNI: http://was.skni.org/
 
