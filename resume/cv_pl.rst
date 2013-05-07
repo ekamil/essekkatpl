@@ -94,3 +94,5 @@ Działalność studencka
 .. _HTML: http://essekkat.pl/cv_pl.html
 .. _SKNI: http://www.skni.org/
 .. _WAS: http://was.skni.org/
+
+.. |--| unicode:: U+2013

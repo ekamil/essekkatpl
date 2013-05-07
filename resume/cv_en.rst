@@ -10,7 +10,7 @@ This CV online: PDF_, HTML_
 
 Education
 --------------
-:2013 |--| present: B. Sc. at Warsaw University of Technology, Faculty of Transport
+:2013 |--| present: Bachelor of Science at Warsaw University of Technology, Faculty of Transport
 
 :2009 |--| 2012: Bachelor studies at Warsaw School of Economics,
     Quantitative Methods in Economics and Information Systems. Resigned.
@@ -18,7 +18,7 @@ Education
 :2006 |--| 2009: VI Highschool in Sosnowiec, math-geo profi
 
 Foreign languages
--------------
+-----------------
 :Angielski: fluent
 :Niemiecki: basic knowledge
 
@@ -80,3 +80,5 @@ Academic activities
 .. _HTML: http://essekkat.pl/cv_pl.html
 .. _SKNI: http://www.skni.org/
 .. _Warsztaty@SKNI: http://was.skni.org/
+
+.. |--| unicode:: U+2013
