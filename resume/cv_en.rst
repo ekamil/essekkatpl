@@ -1,49 +1,42 @@
-================================
 Kamil Essekkat
 ================================
-
 :Date of birth: 16.03.1990
-:Tel.: +48 505 676 706
+:Phone: +48 505 676 706
 :E-mail: kamil@essekkat.pl
-:Web-site: `<http://www.essekkat.pl/en>`_
 
-Education:
+.. class:: screen-only
+
+This CV online: PDF_, HTML_
+
+Education
 --------------
+:2013 |--| present: B. Sc. at Warsaw University of Technology, Faculty of Transport
 
-:2009-now: | Bachelor studies at Warsaw School of Economics
-  | Quantitative Methods in Economics and Information Systems
+:2009 |--| 2012: Bachelor studies at Warsaw School of Economics,
+    Quantitative Methods in Economics and Information Systems. Resigned.
 
-:2006-2009: VI Highschool in Sosnowiec, math-geo profile
+:2006 |--| 2009: VI Highschool in Sosnowiec, math-geo profi
 
-Foreign languages:
-------------------
-
-:English: fluent
-
-:German: basic knowledge
-
-Skills:
+Foreign languages
 -------------
+:Angielski: fluent
+:Niemiecki: basic knowledge
 
-:Programming languages: Python(3), sh(3), SQL(2), JavaScript(2), Java(1)
+Skills
+-------------
+:Programming languages: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1)
 
-:Operating Systems: GNU/Linux(3), Windows(2), AIX
+:Operating systems: GNU/Linux(3), Windows(2), AIX(1)
 
-**Known technologies/products:**
+:Code management: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_
 
-.. class:: cv-table
+:Databases: Oracle, PostgreSQL
 
-+-------------+-------------+-------------+
-|Oracle DB    |Oracle BRM   |SAP          |
-+-------------+-------------+-------------+
-|JBoss        |Grinder      |Django       |
-+-------------+-------------+-------------+
-|Joomla       |Drupal       |PostgreSQL   |
-+-------------+-------------+-------------+
-|Red Hat Cluster Suite                    |
-+-----------------------------------------+
-|Google App Engine                        |
-+-----------------------------------------+
+:Perforamnce testing: Grinder_, Oracle AWR
+
+:Other: OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat Cluster Suite, Zenoss_
+
+Basic knowledge of *SAP* and *Oracle BRM* from operations standpoint.
 
 Driver's licence cat. B. Interpersonal skills.
 
@@ -51,26 +44,39 @@ Driver's licence cat. B. Interpersonal skills.
 
 (*) advancement level: 1 - novice, 2 - medium, 3 - advanced
 
-Experience:
+Work experience
 ---------------
 
-:2010: wcinamy.pl – Django-based site to search for restaurants, with sorting based on distance.
+:10.2010 |--| present: **Accenture** |--| member of Technical Architecture Team
 
-:10.2010-now: Accenture – technical architecture team member; efficiency tests.
+Maintenance and development of internal tools - mainly based on Python.
+Integration of third-party CI/QA tools into projects' infrastructure.
+Conducting efficiency tests through preparation, automatization and reporting.
+Maintenance and support of test environments.
 
-.. raw:: pdf
+:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python & JavaScript
+                    
+Developing Django-based site. Wcinamy.pl was to meant to help find restaurants in a distance-aware way.
 
-   PageBreak oneColumn
-
-Academic activities:
+Academic activities
 -----------------------
 
-:2009-now: Acitivity in Student Association for Computer Science at WSE
+:2009 |--| 2010: Acitivity in Student Association for Computer Science at WSE (SKNI_)
 
-:05.2010: Co-organisation of the `OpenMind <http://openmind.skni.org>`_ conference
+:05.2010: Co-organisation of the OpenMind conference
 
-:05.2010: Ideagora SGH - based on IdeaTorrent and Drupal Q&A site for WSE
+:05.2010: Ideagora SGH – based on IdeaTorrent and Drupal Q&A site for WSE
 
-:03-04.2010: Teaching fellow students Python i MS Access at `Warsztaty@SKNI <http://was.skni.org>`_.
+:03 |--| 04.2010: Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI`_.
 
-:2009: Part taking in creation of `homepage <http://skni.org>`_ of Student Association for Computer Science
+:2009: co-creation of SKNI_ website (Joomla)
+
+.. _Sonar: http://www.sonarsource.org/
+.. _Jenkins CI: http://jenkins-ci.org/
+.. _Sonatype Nexus: http://www.sonatype.org/nexus/
+.. _Grinder: http://grinder.sourceforge.net/
+.. _Zenoss: http://www.zenoss.com/
+.. _PDF: http://essekkat.pl/cv_pl.pdf 
+.. _HTML: http://essekkat.pl/cv_pl.html
+.. _SKNI: http://www.skni.org/
+.. _Warsztaty@SKNI: http://was.skni.org/

@@ -4,19 +4,21 @@ Kamil Essekkat
 :Tel.: +48 505 676 706
 :E-mail: kamil@essekkat.pl
 
+.. class:: screen-only
+
 Wersje online tego CV: PDF_, HTML_
 
 Wykształcenie
 --------------
-:2013 - obecnie: Studia niestacjonarne inżynierskie na Politechnice Warszawskiej,
+:2013 |--| obecnie: Studia niestacjonarne inżynierskie na Politechnice Warszawskiej,
                  Wydział Transportu, na kierunku Transport
 
-:2009 - 2012:
+:2009 |--| 2012:
     Studia stacjonarne licencjackie w Szkole Głównej Handlowej w Warszawie
     na kierunku Metody Ilościowe w Ekonomii i Systemy Informacyjne
     (rezygnacja)
 
-:2006 - 2009: VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
+:2006 |--| 2009: VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
 
 Języki obce
 -------------
@@ -35,46 +37,47 @@ Umiejętności
 
 :Testy wydajnościowe: Grinder_, Oracle AWR
 
-:Pozostałe: OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat Cluster Suite
+:Pozostałe: OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat Cluster Suite, Zenoss_
 
-Podstawowa znajomość *SAP* oraz *Oracle BRM*.
+Podstawowa znajomość *SAP* oraz *Oracle BRM* od strony instalacji i konfiguracji środowisk testowych.
 
 Prawo jazdy kat. B. Umiejętność pracy w zespole.
 
 .. class:: cv-small
 
-(*) poziom umiejętności: 1 - początkujący, 2 - średniozaawansowany, 3 – zaawansowany
+(*) poziom umiejętności: 1 - początkujący, 2 - średniozaawansowany, 3 - zaawansowany
 
 Doświadczenie
 ---------------
 
-:10.2010 - obecnie: **Accenture** - członek zespołu architektury technicznej
+:10.2010 |--| obecnie: **Accenture** |--| członek zespołu architektury technicznej
 
-Zarządzanie oraz rozwój wewnętrznych narzędzi wspomagających development.
+Zarządzanie oraz rozwój wewnętrznych narzędzi wspomagających development - głównie opartych na Pythonie.
+Integracja zewnętrznych narzędzi CI, QA z infrastrukturą projektów.
 Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie.
 Administracja środowiskami testowymi. 
 
-:05.2010 - 10.2010: **wcinamy.pl** - developer Python oraz JavaScript
+:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python oraz JavaScript
                     
 Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
 
 Działalność studencka
 -----------------------
 
-:2009 - 2010:
+:2009 |--| 2010:
     członkowstwo w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie (SKNI_)
 
 :05.2010: 
     współorganizacja konferencji OpenMind
 
 :05.2010:
-   strona Ideagora SGH – oparta na IdeaTorrent i Drupalu
+   strona Ideagora SGH – oparta na IdeaTorrent i Drupalu propozycja strony Q&A dla SGH
 
-:03 - 04.2010:
-    prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI
+:03 |--| 04.2010:
+    prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (WAS_)
 
 :2009:
-    współtworzenie strony głównej SKNI (Joomla)
+    współtworzenie strony głównej SKNI_ (Joomla)
 
 
 .. footer::
@@ -86,6 +89,8 @@ Działalność studencka
 .. _Jenkins CI: http://jenkins-ci.org/
 .. _Sonatype Nexus: http://www.sonatype.org/nexus/
 .. _Grinder: http://grinder.sourceforge.net/
+.. _Zenoss: http://www.zenoss.com/
 .. _PDF: http://essekkat.pl/cv_pl.pdf 
 .. _HTML: http://essekkat.pl/cv_pl.html
 .. _SKNI: http://www.skni.org/
+.. _WAS: http://was.skni.org/
