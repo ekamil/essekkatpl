@@ -1,5 +1,5 @@
-SHELL       := /usr/bin/zsh
-RSYNC    := rsync --delete-before -r
+SHELL := /usr/bin/zsh
+RSYNC := rsync --delete-before -r
 
 MEGI_SSH_HOST := hertz
 MEGI_URL      := http://www1.hertz.megiteam.pl
@@ -20,20 +20,20 @@ cv:
 
 deploy: deploy-lao deploy-megi
 
-clean-remote: clean-remote-lao clean-remote-megi
+clean-remote: clean-lao clean-megi
 
 deploy-megi:
 	$(RSYNC) www/ $(MEGI_SSH_HOST):$(MEGI_WWW_PATH)/
 	ssh $(MEGI_SSH_HOST) 'chmod -R 755 $(MEGI_WWW_PATH)'
 
-clean-remote-megi:
+clean-megi:
 	ssh $(MEGI_SSH_HOST) 'rm -r $(MEGI_WWW_PATH)/*'
 
 deploy-lao:
 	$(RSYNC) www/ $(LAO_SSH_HOST):$(LAO_WWW_PATH)/
 	ssh $(LAO_SSH_HOST) 'chmod -R 755 $(LAO_WWW_PATH)/'
 
-clean-remote-lao:
+clean-lao:
 	ssh $(LAO_SSH_HOST) 'rm -r $(LAO_WWW_PATH)/*'
 
 clean:	
