@@ -1,3 +1,4 @@
 *.pdf
 www/cv_*.html
 www/cv_*.tex
+resume/build/
