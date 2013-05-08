@@ -9,6 +9,8 @@ RST_OPT = --config=$(CONFIG)
 HTML = rst2html $(RST_OPT)
 TEX = rst2latex $(RST_OPT)
 
+all: clean cv
+
 cv: $(CV_LIST)
 
 $(CV_LIST): $(OUT)
