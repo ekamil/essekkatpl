@@ -8,6 +8,10 @@ Kamil Essekkat
 
 Wersje online tego CV: PDF_, HTML_
 
+.. class:: print-only
+
+Źródło: http://essekkat.pl/cv_pl.html
+
 Doświadczenie
 ---------------
 
@@ -69,7 +73,6 @@ Działalność studencka
 * Prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (WAS_)
 * Współorganizacja konferencji OpenMind
 * Współtworzenie strony głównej SKNI_ (Joomla)
-
 
 .. footer::
     Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla

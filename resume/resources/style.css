@@ -65,3 +65,42 @@ table.docutils th {
 table.docutils td {
 	padding: 3px;
 	}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+
+    body {
+        width: 100%;
+        background: none;
+       	margin: 0; padding: 0;
+        color: black;
+        font-size: 12px;
+        line-height: 1.0;
+    }
+
+    .footer, .cv-small {
+        font-size: 8px;
+    }
+
+    .screen-only {
+        display: none;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    hr {
+        display: none;
+    }
+}

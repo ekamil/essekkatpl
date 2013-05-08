@@ -8,6 +8,10 @@ Kamil Essekkat
 
 This CV online: PDF_, HTML_
 
+.. class:: print-only
+
+Source: http://essekkat.pl/cv_en.html
+
 Work experience
 ---------------
 
