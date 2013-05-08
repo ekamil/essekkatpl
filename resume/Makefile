@@ -14,7 +14,6 @@ cv: $(CV_LIST)
 $(CV_LIST): $(OUT)
 	$(PDF)  cv_$@.rst --output=$(OUT)/cv_$@.pdf
 	$(HTML) cv_$@.rst $(OUT)/cv_$@.html 
-	$(TEX)  cv_$@.rst $(OUT)/cv_$@.tex 
 
 $(OUT):
 	-mkdir $(OUT)
