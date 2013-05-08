@@ -64,7 +64,7 @@ Prawo jazdy kat. B. Umiejętność pracy w zespole.
 Działalność studencka
 -----------------------
 
-:2009 |--| 2010: Członkowstwo w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie (SKNI_)
+:2009 |--| 2010: Członkostwo w Studenckim Kole Naukowym Informatyki Szkoły Głównej Handlowej w Warszawie (SKNI_)
 
 * Prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (WAS_)
 * Współorganizacja konferencji OpenMind
