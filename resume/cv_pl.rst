@@ -45,7 +45,7 @@ Języki obce
 
 Umiejętności
 -------------
-:Języki programowania: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1)
+:Języki programowania: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1), Lua(1)
 
 :Systemy operacyjne: GNU/Linux(3), Windows(2), AIX(1)
 

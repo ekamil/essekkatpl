@@ -42,7 +42,7 @@ Foreign languages
 
 Skills
 -------------
-:Programming languages: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1)
+:Programming languages: Python(3), sh(3), SQL(2), Java(1), PL/SQL(1), Lua(1)
 
 :Operating systems: GNU/Linux(3), Windows(2), AIX(1)
 
