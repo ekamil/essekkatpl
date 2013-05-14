@@ -115,7 +115,13 @@ a {
         font-size: 12px;
         line-height: 1.0;
     }
-    .footer {
+    a {
+        color: #000000;
+    }
+    hr {
+        display: none;
+    }
+    .footer,.cv-small {
         font-size: 8px;
     }
     .screen-only {
@@ -123,11 +129,5 @@ a {
     }
     .print-only {
         display: block;
-    }
-    a {
-        color: #000000;
-    }
-    hr {
-        display: none;
     }
 }
