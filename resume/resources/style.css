@@ -1,35 +1,7 @@
-body {
-	background: #cfcfcf;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	margin: 0px 20% 0% 20%;
-	min-width: 100px;
-	height: 100%;
-	padding: 0px 0px 0px 0px;
-	font-family: sans-serif;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-	color: #52483E;
-}
-
-h1, .title {
+.title {
 	font-size: 1.8em;
 	font-weight: bold;
-}
-
-.title {
-    text-align:center
-}
-
-h2 {
-	font-size: 1.4em;
-	font-weight: bold;
-}
-
-h3 {
-	font-size: 1.4em;
+	text-align:center
 }
 
 a {
@@ -71,36 +43,7 @@ table.docutils td {
 }
 
 @media print {
-    @page {
-        margin: 0.5cm;
-    }
-
-    body {
-        width: 100%;
-        background: none;
-       	margin: 0; padding: 0;
-        color: black;
-        font-size: 12px;
-        line-height: 1.0;
-    }
-
-    .footer, .cv-small {
+    .cv-small {
         font-size: 8px;
-    }
-
-    .screen-only {
-        display: none;
-    }
-
-    .print-only {
-        display: block;
-    }
-
-    a {
-        color: #000000;
-    }
-
-    hr {
-        display: none;
     }
 }

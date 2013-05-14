@@ -14,13 +14,9 @@ h1, h2, h3 {
 	color: #52483E;
 }
 
-h1, .title {
+h1 {
 	font-size: 1.8em;
 	font-weight: bold;
-}
-
-.title {
-    text-align:center
 }
 
 h2 {
@@ -104,35 +100,6 @@ a {
 	color: #48665B;
 }
 
-.cv-small {
-	font-size: 10px;
-}
-
-.cv-table {
-	padding: 8px;
-	text-align: center;
-}
-
-.cv-table td {
-	border-width: thin;
-	border-color: gray;
-	border-style: solid;
-}
-
-table.docutils {
-	border-width: 0px;
-	border-spacing: 2px;
-}
-
-table.docutils th {
-	border-width: 0px;
-	padding: 3px;
-}
-
-table.docutils td {
-	padding: 3px;
-}
-
 @media print {
     @page {
         margin: 0.5cm;
@@ -147,7 +114,7 @@ table.docutils td {
         line-height: 1.0;
     }
 
-    .footer, .cv-small {
+    .footer {
         font-size: 8px;
     }
 
