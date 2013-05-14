@@ -105,10 +105,8 @@ a {
 }
 
 @media print {
-    @page {
-        margin: 0.5cm;
-    }
     body {
+        margin: 0.5cm;
         width: 100%;
         background: none;
         margin: 0;
