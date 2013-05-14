@@ -9,14 +9,18 @@ body {
 	font-family: sans-serif;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
 	font-weight: normal;
 	color: #52483E;
 }
 
-h1 {
+h1, .title {
 	font-size: 1.8em;
 	font-weight: bold;
+}
+
+.title {
+    text-align:center
 }
 
 h2 {
@@ -131,4 +135,39 @@ table.docutils th {
 
 table.docutils td {
 	padding: 3px;
+}
+
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+
+    body {
+        width: 100%;
+        background: none;
+       	margin: 0; padding: 0;
+        color: black;
+        font-size: 12px;
+        line-height: 1.0;
+    }
+
+    .footer, .cv-small {
+        font-size: 8px;
+    }
+
+    .screen-only {
+        display: none;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    a {
+        color: #000000;
+    }
+
+    hr {
+        display: none;
+    }
 }
