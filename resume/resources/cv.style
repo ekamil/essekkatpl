@@ -86,7 +86,7 @@ styles:
     fontSize: 10
     fontName: stdBoldItalic
 
-  field_list:
+  field-list:
     parent: bodytext
     alignment: TA_LEFT
     commands: []

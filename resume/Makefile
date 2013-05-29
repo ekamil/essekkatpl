@@ -2,7 +2,7 @@ CV_LIST   = pl en
 CONFIG    = resources/rst2html.config
 OUT = build
 
-PDF_OPT = --compressed --stylesheets=resources/cv.style
+PDF_OPT = --compressed --stylesheets=resources/cv.style --strip-elements-with-class=screen-only
 PDF = rst2pdf $(PDF_OPT)
 
 RST_OPT = --config=$(CONFIG)
