@@ -81,4 +81,8 @@ Academic activities
 .. _SKNI: http://www.skni.org/
 .. _Warsztaty@SKNI: http://was.skni.org/
 
+.. footer::
+    Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. z 2002 r. Nr 101, poz. 926, ze zm.).
+
+
 .. |--| unicode:: U+2013
