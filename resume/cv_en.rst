@@ -50,7 +50,7 @@ Skills
 
 advancement level: 1 - novice, 2 - medium, 3 - advanced
 
-:Code management: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_
+:Code management: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_, Maven, Ant
 
 :Databases: Oracle, PostgreSQL
 

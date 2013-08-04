@@ -53,7 +53,7 @@ Umiejętności
 
 poziom umiejętności: 1 - początkujący, 2 - średniozaawansowany, 3 - zaawansowany
 
-:Zarządzanie kodem: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_
+:Zarządzanie kodem: Trac, Git, SVN, Mercurial, `Jenkins CI`_, `Sonatype Nexus`_, Sonar_, Maven, Ant
 
 :Bazy danych: Oracle, PostgreSQL
 
