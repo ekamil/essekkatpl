@@ -2,12 +2,22 @@ CV_LIST   = pl en
 CONFIG    = resources/rst2html.config
 OUT = build
 
-PDF_OPT = --compressed --stylesheets=resources/cv.style --strip-elements-with-class=screen-only
+PDF_OPT  = --compressed
+PDF_OPT += --stylesheets=resources/cv.style
+PDF_OPT += --strip-elements-with-class=screen-only
+PDF_OPT += --font-path=resources/fonts
 PDF = rst2pdf $(PDF_OPT)
 
-RST_OPT = --config=$(CONFIG)
-HTML = rst2html $(RST_OPT)
-TEX = rst2latex $(RST_OPT)
+HTML_OPT = --config=$(CONFIG)
+
+uname_S := $(shell sh -c 'uname -s 2>/dev/null || echo not')
+ifeq ($(uname_S), Linux)
+HTML = rst2html $(HTML_OPT)
+else
+HTML = python /Python27/Scripts/rst2html.py $(HTML_OPT)
+endif
+
+TEX = rst2latex $(HTML_OPT)
 
 all: clean cv
 

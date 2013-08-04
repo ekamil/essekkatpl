@@ -25,9 +25,9 @@ firstTemplate: oneColumn
         showFooter : true
 
 fontsAlias:
-    stdFont: Times_Roman
+    stdFont: DejaVuSans
     stdBold: DejaVuSans-Bold
-    stdItalic: DejaVuSans-Italic
+    stdItalic: DejaVuSans-Oblique
     stdBoldItalic: Times-Bold
     stdSans: Times_Roman
     stdSansBold: Times-Bold
