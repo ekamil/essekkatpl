@@ -7,7 +7,7 @@ PDF_OPT += --strip-elements-with-class=screen-only
 PDF_OPT += --font-path=resources/fonts
 PDF = rst2pdf $(PDF_OPT)
 
-HTML_OPT = --config=resources/rst2html.config
+HTML_OPT = --config=rst2html.config
 
 uname_S := $(shell sh -c 'uname -s 2>/dev/null || echo not')
 ifeq ($(uname_S), Linux)
