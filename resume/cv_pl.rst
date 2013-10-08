@@ -28,9 +28,6 @@ Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
 
 Wykształcenie
 --------------
-:2013 |--| obecnie: Studia niestacjonarne inżynierskie na Politechnice Warszawskiej,
-                 Wydział Transportu, na kierunku Transport
-
 :2009 |--| 2012:
     Studia stacjonarne licencjackie w Szkole Głównej Handlowej w Warszawie
     na kierunku Metody Ilościowe w Ekonomii i Systemy Informacyjne
@@ -41,7 +38,7 @@ Wykształcenie
 Języki obce
 -------------
 :Angielski: biegle
-:Niemiecki: dobrze
+:Niemiecki: podstawowa znajomość
 
 Umiejętności
 -------------

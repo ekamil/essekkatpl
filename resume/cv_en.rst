@@ -28,8 +28,6 @@ Developing Django-based site. Wcinamy.pl was to meant to help find restaurants i
 
 Education
 --------------
-:2013 |--| present: Bachelor of Science at Warsaw University of Technology, Faculty of Transport
-
 :2009 |--| 2012: Bachelor studies at Warsaw School of Economics,
     Quantitative Methods in Economics and Information Systems. Resigned.
 
@@ -82,7 +80,7 @@ Academic activities
 .. _Warsztaty@SKNI: http://was.skni.org/
 
 .. footer::
-    Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. z 2002 r. Nr 101, poz. 926, ze zm.).
+    I hereby authorize to process the attached personal information strictly for the purposes of job recruitment pursuant to the Personal Data Protection Act of 29 August 1997 (Journal of Laws (Dz.U.) No. 133, item 883).
 
 
 .. |--| unicode:: U+2013
