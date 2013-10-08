@@ -1,4 +1,4 @@
-CV_LIST   = pl en
+CV_LIST   = pl en de
 OUT = build
 
 PDF_OPT  = --compressed
