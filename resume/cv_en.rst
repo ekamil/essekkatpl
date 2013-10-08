@@ -17,14 +17,14 @@ Work experience
 
 :10.2010 |--| present: **Accenture** |--| member of Technical Architecture Team
 
-Conducting efficiency tests through preparation, automatization and reporting.
-Maintenance and development of internal tools - mainly based on Python.
+Conducting performance tests through the stages of preparation, automatization and reporting.
+Maintenance and development of internal tools - mainly written in Python.
 Integration of third-party CI/QA tools into projects' infrastructure.
 Maintenance and support of test environments.
 
 :05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python & JavaScript
                     
-Developing Django-based site. Wcinamy.pl was to meant to help find restaurants in a distance-aware way.
+Developing Django-based site. Wcinamy.pl was meant to help find restaurants in a distance-aware way.
 
 Education
 --------------
@@ -35,8 +35,8 @@ Education
 
 Foreign languages
 -----------------
-:Angielski: fluent
-:Niemiecki: basic knowledge
+:English: fluent
+:German: basic knowledge
 
 Skills
 -------------
@@ -52,13 +52,13 @@ advancement level: 1 - novice, 2 - medium, 3 - advanced
 
 :Databases: Oracle, PostgreSQL
 
-:Perforamnce testing: Grinder_, Oracle AWR
+:Load testing: Grinder_, Oracle AWR
 
 :Other: OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat Cluster Suite, Zenoss_
 
 Basic knowledge of *SAP* and *Oracle BRM* from operations perpective.
 
-Driver's licence cat. B. Interpersonal skills.
+Driver's licence cat. B.
 
 Academic activities
 -----------------------
