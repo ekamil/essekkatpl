@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
+    grunt.loadNpmTasks('grunt-ssh');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -319,6 +320,55 @@ module.exports = function (grunt) {
             }
         },
 
+        sshconfig: {
+              "hertz": {
+                    host: 'hertz.megiteam.pl',
+                    username: 'hertz',
+                    privateKey: grunt.file.read('/home/kamil/.ssh/to_hertz'),
+              }
+        },
+
+    
+        sftp: {
+            deploy: {
+                files: {
+                    './': 'dist/**'
+                },
+                options: {
+                    path: '/home/hertz/www/new.essekkat.pl',
+                    srcBasePath: 'dist/',
+                    showProgress: true,
+                    config: "hertz"
+                }
+            }
+        },
+
+        sshexec: {
+            predeploy: {
+                command: [
+                    'mkdir new.essekkat.pl',
+                    'mkdir new.essekkat.pl/styles',
+                    'mkdir new.essekkat.pl/scripts',
+                    'mkdir new.essekkat.pl/bower_components',
+                    'mkdir new.essekkat.pl/bower_components/modernizr'
+                ],
+                options: {
+                    ignoreErrors: true,
+                    config: "hertz"
+                }
+            },
+            clean: {
+                command: [
+                    'rm -vr new.essekkat.pl/*'
+                ],
+                options: {
+                    ignoreErrors: true,
+                    config: "hertz"
+                }
+            }
+        },
+
+
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
@@ -401,9 +451,17 @@ module.exports = function (grunt) {
         'htmlmin'
     ]);
 
+    grunt.registerTask('deploy', [
+            'build',
+            'sshexec:clean',
+            'sshexec:predeploy',
+            'sftp:deploy'
+        ]);
+
     grunt.registerTask('default', [
         'newer:jshint',
         'test',
         'build'
     ]);
+
 };
