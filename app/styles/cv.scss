@@ -1,0 +1,34 @@
+@media screen {
+    div#cv-pl, div#cv-en {
+        h1 {
+            display: none;
+            }
+
+        a {
+            color: #000033;
+            text-decoration: none
+        }
+
+        .footer,.cv-small {
+            font-size: 11px;
+            color: #333333;
+        }
+
+        table {
+            padding: 8px;
+            text-align: center;
+            border-width: 0px;
+            border-spacing: 2px;
+        }
+
+        table td {
+            padding: 3px;
+        }
+
+        table th {
+            border-width: 0px;
+            padding: 3px;
+        }
+
+    }
+}
