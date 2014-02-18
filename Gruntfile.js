@@ -437,6 +437,11 @@ module.exports = function (grunt) {
                 dest: 'dist/index.html',
                 match: '//GASCRIPT'
             },
+            cvpl: {
+                src: 'app/cv_pl.html',
+                dest: 'dist/index.html',
+                match: '//CVPL'
+            },
         }
     });
 
@@ -508,7 +513,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('insert:dist', [
-            'insert:ga'
+            'insert:ga',
+            'insert:cvpl'
         ]);
 
 };
