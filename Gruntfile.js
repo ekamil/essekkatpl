@@ -429,6 +429,14 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+        insert: {
+            options: {},
+            ga: {
+                src: 'app/google-analytics.js',
+                dest: 'dist/index.html',
+                match: '//GASCRIPT'
+            },
         }
     });
 
@@ -479,6 +487,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
+        'insert:dist',
         'modernizr',
         'rev',
         'usemin',
@@ -497,5 +506,9 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    grunt.registerTask('insert:dist', [
+            'insert:ga'
+        ]);
 
 };
