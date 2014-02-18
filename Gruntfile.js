@@ -14,7 +14,6 @@ module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
-    grunt.loadNpmTasks('grunt-ssh');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -31,6 +30,13 @@ module.exports = function (grunt) {
             js: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
                 tasks: ['jshint'],
+                options: {
+                    livereload: true
+                }
+            },
+            coffee: {
+                files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
+                tasks: ['coffee:dist'],
                 options: {
                     livereload: true
                 }
@@ -138,7 +144,19 @@ module.exports = function (grunt) {
             }
         },
 
-
+        coffee: {
+            dist: {
+                files: [{
+                    // rather than compiling multiple files here you should
+                    // require them into your main .coffee file
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/scripts',
+                    src: '{,*/}*.coffee',
+                    dest: '.tmp/scripts',
+                    ext: '.js'
+                }]
+            }
+        },
 
 
         // Compiles Sass to CSS and generates necessary files if requested
@@ -321,11 +339,11 @@ module.exports = function (grunt) {
         },
 
         sshconfig: {
-              "hertz": {
-                    host: 'hertz.megiteam.pl',
-                    username: 'hertz',
-                    privateKey: grunt.file.read('/home/kamil/.ssh/to_hertz'),
-              }
+            'hertz': {
+                host: 'hertz.megiteam.pl',
+                username: 'hertz',
+                privateKey: grunt.file.read('/home/kamil/.ssh/to_hertz'),
+            }
         },
 
     
@@ -338,7 +356,18 @@ module.exports = function (grunt) {
                     path: '/home/hertz/www/new.essekkat.pl',
                     srcBasePath: 'dist/',
                     showProgress: true,
-                    config: "hertz"
+                    config: 'hertz'
+                }
+            },
+            dev: {
+                files: {
+                    './': ['app/*html', 'app/scripts/*', 'app/styles/*']
+                },
+                options: {
+                    path: '/home/hertz/www/new.essekkat.pl',
+                    srcBasePath: 'app/',
+                    showProgress: true,
+                    config: 'hertz'
                 }
             }
         },
@@ -354,7 +383,7 @@ module.exports = function (grunt) {
                 ],
                 options: {
                     ignoreErrors: true,
-                    config: "hertz"
+                    config: 'hertz'
                 }
             },
             clean: {
@@ -363,7 +392,7 @@ module.exports = function (grunt) {
                 ],
                 options: {
                     ignoreErrors: true,
-                    config: "hertz"
+                    config: 'hertz'
                 }
             }
         },
@@ -409,6 +438,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+            'coffee:dist',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -425,6 +455,7 @@ module.exports = function (grunt) {
         if (target !== 'watch') {
             grunt.task.run([
                 'clean:server',
+                'coffee:dist',
                 'concurrent:test',
                 'autoprefixer',
             ]);
@@ -438,6 +469,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'coffee:dist',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',

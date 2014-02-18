@@ -7,9 +7,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Kamil's site</title>
-        <meta name="description" content="">
+        <link rel="openid.server" href="http://www.myopenid.com/server" />
+        <link rel="openid.delegate" href="http://KamilEssekkat.myopenid.com/" />
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
 
@@ -29,42 +31,52 @@
 
         <div class="container">
             <div class="header gradiented">
-                <ul class="nav nav-pills pull-right">
-                    <li><a href="">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#cv">CV</a>
+                <ul class="nav nav-pills">
+                    <li class="pull-left"><a href="#"><h3>Kamil's site</h3></a></li>
+                    <li class="dropdown pull-right">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#cv"><b>CV</b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#cv-pl">Polski</a></li>
-                            <li><a href="#cv-en">English</a></li>
+                            <li><a data-toggle="tab" href="#cv-pl">Polski</a></li>
+                            <li><a data-toggle="tab" href="#cv-en">English</a></li>
                          </ul>
                     </li>
-
-                    <li><a href="#">Mail</a></li>
-                    <li><a href="#">GPG</a></li>
+                    <li class="pull-right"><a data-toggle="tab" href="#mail">Mail</a></li>
+                    <li class="pull-right"><a data-toggle="tab" href="#gpg">GPG</a></li>
                 </ul>
-                <h3 class="text-bold">Kamil's site</h3>
             </div>
 
             <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
+                <h2>'Allo, 'Allo!</h2>
                 <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+                <!-- <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p> -->
             </div>
 
             <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                <div class="col-lg-6 tab-content">
+                    <div class="tab-pane" id="cv-pl">
+                        <h4>HTML5 Boilerplate</h4>
+                        <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                    </div>
 
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+                    <div class="tab-pane" id="cv-en">
+                        <h4>Sass with Compass</h4>
+                        <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+                    </div>
 
+                    <div  class="tab-pane" id="gpg">
+                        <h4>GPG</h4>
+                        <p>Aktualny klucz to ten o id <code>598C2A2D</code>, fingerprint: 
+                        <code>7B60 0895 08F7 40BE 59D0 487F 696E AE84 598C 2A2D</code> </p>
+                        <button id="pubkey-show" type="button" class="btn btn-info">Pokaż klucz</button>
+                        Lub <a class="btn btn-info" role="button" href="files/KamilE.asc">Pobierz</a>
+                        <pre id="pubkey" class="pre-scrollable"></pre>
+                    </div>
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+                    <div class="tab-pane" id="mail">
+                        <h4>Mail</h4>
+                        <p><a href="mailto:kamil [at] essekkat.pl">kamil[at]essekkat.pl</a></p>
+                    </div>
 
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
 
                 </div>
             </div>
@@ -82,26 +94,26 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <!-- <script> -->
+        <!-- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
+        <!-- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
+        <!-- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
+        <!-- })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); -->
+
+        <!-- ga('create', 'UA-48118936-1', 'essekkat.pl'); -->
+        <!-- ga('send', 'pageview'); -->
+        <!-- </script> -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <!-- <script src="bower_components/sass-bootstrap/js/affix.js"></script> -->
+        <!-- <script src="bower_components/sass-bootstrap/js/alert.js"></script> -->
         <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <!-- <script src="bower_components/sass-bootstrap/js/tooltip.js"></script> -->
+        <!-- <script src="bower_components/sass-bootstrap/js/modal.js"></script> -->
         <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <!-- <script src="bower_components/sass-bootstrap/js/button.js"></script> -->
+        <!-- <script src="bower_components/sass-bootstrap/js/popover.js"></script> -->
+        <!-- <script src="bower_components/sass-bootstrap/js/carousel.js"></script> -->
         <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
         <script src="bower_components/sass-bootstrap/js/tab.js"></script>

@@ -28,20 +28,33 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
+    border-radius: 4px;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
         margin-top: 0;
         margin-bottom: 0;
         line-height: 40px;
-        padding-bottom: 19px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+
     background-color: #00369b;
     color: $cf;
 }
 
-div.container div.header ul.nav li.dropdown:hover > ul.dropdown-menu {
+div.header ul.nav ul.dropdown-menu {
+    margin: 0;
+}
+
+div.header ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
+}
+
+.nav > li.pull-left > a {
+    background-color: transparent !important;
+    color: $cf !important;
 }
 /* Custom page footer */
 .footer {
@@ -54,6 +67,14 @@ div.container div.header ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin: 30px 0;
 }
 
+#pubkey {
+    display: none;
+
+}
+
+pre#pubkey {
+    width: 45em;
+}
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
