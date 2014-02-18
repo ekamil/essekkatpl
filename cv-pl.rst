@@ -103,3 +103,13 @@ Szkoły Głównej Handlowej w Warszawie (`SKNI <http://www.skni.org/>`_)
 -  Współorganizacja konferencji OpenMind
 -  Współtworzenie strony głównej `SKNI <http://www.skni.org/>`_ (Joomla)
 
+.. raw:: html
+
+   <div class="visible-print">
+
+.. footer::
+    Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji rekrutacji zgodnie z Ustawą z dn. 29.08.97 r. o Ochronie Danych Osobowych (Dz. U. nr 133 poz. 883).
+
+.. raw:: html
+
+   </div>
