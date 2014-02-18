@@ -1,23 +1,3 @@
-$('a[data-toggle="tab"]').on 'shown.bs.tab', (e) ->
-        $('.jumbotron').hide()
-
-
-# location hash
-$(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
-    if e.target.href
-        location.href = e.target.href
-    else
-        location.href = '#'
-
-
-$('a[href="#"]').on 'click', (e) ->
-    $('.jumbotron').show()
-    $('ul.nav li.active').removeClass 'active'
-    $('.tab-pane.active').removeClass 'active'
-    e.preventDefault()
-
-
-
 class ButtonGetter
     constructor: (@trigger, @dest, @src) ->
         @properties =
@@ -54,13 +34,13 @@ class GPGButton extends ButtonGetter
     listen: ->
         super
         $('.nav a').on 'click', (e) =>
-            if not e.target?.href?.endsWith('#gpg')
+            if not e.target?.href?.split('#')[1] != 'gpg'
                 @deactivate()
 
 
 class CVTab extends ButtonGetter
     constructor: (f) ->
-        super $("a[href=##{f}]"), $("##{f}"), "/#{f}.txt"
+        super $("a[href=##{f}]"), $("##{f}"), "/files/#{f}.html"
 
     load: ->
         if not @cached
@@ -74,9 +54,32 @@ class CVTab extends ButtonGetter
 
 
 # main
-hash = window.location.hash
-if hash
-    elem = $("a[href=#{hash}]")?.tab('show')
+$('a[data-toggle="tab"]').on 'shown.bs.tab', (e) ->
+        $('.jumbotron').hide()
+
+
+# location hash
+$(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
+    if e.target.href
+        location.href = e.target.href
+    else
+        location.href = '#'
+
+
+$('a[href="#"]').on 'click', (e) ->
+    $('.jumbotron').show()
+    $('ul.nav li.active').removeClass 'active'
+    $('.tab-pane.active').removeClass 'active'
+    e.preventDefault()
+
+
+window.onload = () ->
+    if window.location.hash
+        hash = window.location.hash
+        $("a[href=#{hash}]")?.tab('show')
+    else
+        hash = window.location
+        $("a[href=#{hash}]")?.tab('show')
 
 
 (new GPGButton $('#pubkey-show'), $("#pubkey"), 'files/kamil_e.asc').listen()
