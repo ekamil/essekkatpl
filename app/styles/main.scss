@@ -118,3 +118,8 @@ pre#pubkey {
     }
 }
 
+@media screen and (max-width: 768px) {
+    code {
+        white-space: normal !important;
+    }
+}
