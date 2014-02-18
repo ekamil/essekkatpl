@@ -58,9 +58,9 @@ Foreign languages
 +-----------------+--------------+
 | **English**     | fluent       |
 +-----------------+--------------+
-| **German**      |  basic       |
+| **German**      | basic        |
 +-----------------+--------------+
-| **Norwegian**   |  basic       |
+| **Norwegian**   | basic        |
 +-----------------+--------------+
 
 Skills
