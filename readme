@@ -1,0 +1,5 @@
+Master file:
+cv-pl.rst (RestructuredText)
+  pandoc -> odt
+  pandoc -> html
+  rst2pdf -> pdf
