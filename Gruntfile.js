@@ -323,6 +323,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.webp',
+                        'files/*',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
@@ -378,6 +379,7 @@ module.exports = function (grunt) {
                     'mkdir new.essekkat.pl',
                     'mkdir new.essekkat.pl/styles',
                     'mkdir new.essekkat.pl/scripts',
+                    'mkdir new.essekkat.pl/files',
                     'mkdir new.essekkat.pl/bower_components',
                     'mkdir new.essekkat.pl/bower_components/modernizr'
                 ],
