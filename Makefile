@@ -16,10 +16,10 @@ all: clean cv
 cv: $(CV_LIST)
 
 $(CV_LIST): $(OUT)
-	$(pdf)  cv_$@.rst --output=$(OUT)/cv_$@.pdf
-	$(html) cv_$@.rst -o $(OUT)/cv_$@.html 
-	$(latex) cv_$@.rst -o $(OUT)/cv_$@.latex
-	$(docx) cv_$@.rst -o $(OUT)/cv_$@.docx
+	$(pdf)  cv-$@.rst --output=$(OUT)/cv-$@.pdf
+	$(html) cv-$@.rst -o $(OUT)/cv-$@.html 
+	$(latex) cv-$@.rst -o $(OUT)/cv-$@.latex
+	$(docx) cv-$@.rst -o $(OUT)/cv-$@.docx
 
 $(OUT):
 	-mkdir $(OUT)

@@ -29,7 +29,7 @@ Source: `http://essekkat.pl/#cv-pl <http://essekkat.pl/#cv-pl>`_
    </div>
 
 Work experience
--------------
+---------------
 
 **since 10.2010: Accenture** – member of Technical Architecture Team
 
@@ -38,7 +38,7 @@ Maintenance and development of internal tools - mainly written in Python.
 Integration of third-party CI/QA tools into projects' infrastructure.
 Maintenance and support of test environments.
 
-:05.2010 |--| 10.2010: **wcinamy.pl** |--| developer Python & JavaScript
+**05.2010 - 10.2010: wcinamy.pl** - developer Python & JavaScript
                     
 Developing Django-based site. Wcinamy.pl was meant to help find restaurants in a distance-aware way.
 
@@ -53,7 +53,7 @@ Education
     VI Highschool in Sosnowiec, core subjects: maths, geography
 
 Foreign languages
------------
+------------------
 
 +-----------------+--------------+
 | **English**     | fluent       |
@@ -92,11 +92,11 @@ Basic knowledge of *SAP* and *Oracle BRM* from operations perpective.
 Academic activity
 ---------------------
 
-**2009 - 2010** Acitivity in Student Association for Computer Science at WSE (SKNI_)
+**2009 - 2010** Acitivity in Student Association for Computer Science at WSE (`SKNI <http://www.skni.org/>`_)
 
 - Co-organisation of the OpenMind conference
-- Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI`_.
-- Co-creation of SKNI_ website (Joomla)
+- Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI <http://was.skni.org/>`_.
+- Co-creation of `SKNI <http://www.skni.org/>`_ website (Joomla)
 
 .. raw:: html
 
