@@ -1,53 +1,84 @@
 $('a[data-toggle="tab"]').on 'shown.bs.tab', (e) ->
         $('.jumbotron').hide()
 
+
+# location hash
+$(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
+    if e.target.href
+        location.href = e.target.href
+    else
+        location.href = '#'
+
+
 $('a[href="#"]').on 'click', (e) ->
     $('.jumbotron').show()
-    $('ul.nav li.active').removeClass('active')
-    $('.tab-pane.active').removeClass('active')
+    $('ul.nav li.active').removeClass 'active'
+    $('.tab-pane.active').removeClass 'active'
     e.preventDefault()
 
 
-class Toggler
-    constructor: (@btn, @dst) ->
+
+class ButtonGetter
+    constructor: (@trigger, @dest, @src) ->
         @properties =
-            active: false
             cached: false
 
-    getData: ->
+    activate: ->
         if not @cached
-            $.get "/files/KamilE.asc", (data) =>
-                @dst.html(data)
-                @cached = true
-        @btn.html("Ukryj klucz")
-        @dst.show()
+            @dest.load @src
+            @cached = true
+        @dest.show()
+        @active = true
 
-    clear: ->
-        @dst.hide()
-        @btn.html("Pokaż klucz")
+    deactivate: ->
+        @dest.hide()
+        @active = false
+        
+    listen: ->
+        @trigger.on 'click', (event) =>
+            if @active
+                @deactivate()
+            else
+                @activate()
+
+
+class GPGButton extends ButtonGetter
+    activate: ->
+        super
+        @trigger.html("Ukryj klucz")
+
+    deactivate: ->
+        super
+        @trigger.html("Pokaż klucz")
 
     listen: ->
-        @btn.on 'click', (event) =>
-            if @active
-                @active = false
-                @clear()
-            else
-                @active = true
-                @getData()
+        super
+        $('.nav a').on 'click', (e) =>
+            if not e.target?.href?.endsWith('#gpg')
+                @deactivate()
 
 
-toggler = new Toggler $('#pubkey-show'), $("#pubkey")
-toggler.listen()
+class CVTab extends ButtonGetter
+    constructor: (f) ->
+        super $("a[href=##{f}]"), $("##{f}"), "/#{f}.txt"
+
+    load: ->
+        if not @cached
+            @dest.load @src
+            @cached = true
+
+    listen: ->
+        @trigger.on 'shown.bs.tab', (event) =>
+            unless @cached
+                @load()
 
 
-cvHandler = (f) ->
-    bt = $("a[href=##{f}]")
-    target = $("##{f}")
-    bt.on 'shown.bs.tab', (e) ->
-        unless target.hasClass 'cached'
-            target.load "/#{f}.txt"
-            target.addClass 'cached'
+# main
+hash = window.location.hash
+if hash
+    elem = $("a[href=#{hash}]")?.tab('show')
 
 
-cvHandler('cv-pl')
-cvHandler('cv-en')
+(new GPGButton $('#pubkey-show'), $("#pubkey"), 'files/kamil_e.asc').listen()
+(new CVTab('cv-pl')).listen()
+(new CVTab('cv-en')).listen()
