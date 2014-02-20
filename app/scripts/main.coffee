@@ -38,24 +38,34 @@ class GPGButton extends ButtonGetter
                 @deactivate()
 
 
-class CVTab extends ButtonGetter
+class CVTab
     constructor: (f) ->
-        super $("a[href=##{f}]"), $("##{f}"), "/files/#{f}.html"
-
-    load: ->
-        if not @cached
-            @dest.load @src
-            @cached = true
+        @trigger = $ ".nav a[href=##{f}]"
+        @dest = $ "##{f} > .cv-target"
+        @src = "/files/#{f}.html"
+        @cached = false
 
     listen: ->
-        @trigger.on 'shown.bs.tab', (event) =>
+        @trigger.on 'show.bs.tab', (event) =>
             unless @cached
-                @load()
+                @dest.load @src
+                @cached = true
+            @postload()
+
+    postload: ->
+        @dest.children('table').addClass 'table'
 
 
 # main
 $('a[data-toggle="tab"]').on 'shown.bs.tab', (e) ->
         $('.jumbotron').hide()
+
+
+$('.nav a[href="#"]').on 'click', (e) ->
+    $('.jumbotron').show()
+    $('ul.nav li.active').removeClass 'active'
+    $('.tab-pane.active').removeClass 'active'
+    e.preventDefault()
 
 
 # location hash
@@ -66,22 +76,25 @@ $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill
         location.href = '#'
 
 
-$('a[href="#"]').on 'click', (e) ->
-    $('.jumbotron').show()
-    $('ul.nav li.active').removeClass 'active'
-    $('.tab-pane.active').removeClass 'active'
-    e.preventDefault()
-
-
 window.onload = () ->
-    if window.location.hash
-        hash = window.location.hash
-        $("a[href=#{hash}]")?.tab('show')
-    else
-        hash = window.location
-        $("a[href=#{hash}]")?.tab('show')
+    try
+        if window.location.hash
+            hash = window.location.hash
+            $(".nav a[href=#{hash}]")?.tab('show')
+        else
+            hash = '#'
+            $(".nav a[href=#{hash}]")?.tab('show')
+    catch error
+        console.log error
+        return
 
 
-(new GPGButton $('#pubkey-show'), $("#pubkey"), 'files/kamil_e.asc').listen()
+$('.jumbotron a[role="button"]').on 'click', (event) ->
+    if this.hash
+        $(".nav a[href=#{this.hash}]")?.tab('show')
+
+
+(new GPGButton $('#pubkey'), $("#pubkey-target"), 'files/kamil_e.asc').listen()
+(new GPGButton $('#pubkey-apt'), $("#pubkey-apt-target"), 'files/debian.asc').listen()
 (new CVTab('cv-pl')).listen()
 (new CVTab('cv-en')).listen()

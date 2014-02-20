@@ -28,55 +28,172 @@
 
 
         <div class="container">
-            <div class="header gradiented hidden-print">
-                <ul class="nav nav-pills">
-                    <li data-toggle="pill" class="pull-left"><a class="disabled" href="#"><h3>Kamil's site</h3></a></li>
+            <a class="disabled visible-xs h2" href="">Kamil's site</a>
+            <div class="header gradiented hidden-print hidden-xs">
+                <ul class="nav nav-pills visible-notouch">
+                    <li data-toggle="pill" class="pull-left">
+                        <a class="disabled navbar-brand" href="#">
+                            Kamil's site
+                        </a>
+                    </li>
                     <li class="dropdown pull-right">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#cv"><b>CV</b></a>
                         <ul class="dropdown-menu">
-                            <li><a data-toggle="tab" href="#cv-pl">Polski</a></li>
-                            <li><a data-toggle="tab" href="#cv-en">English</a></li>
+                            <li>
+                                <a data-toggle="tab" href="#cv-pl">Polski</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#cv-en">English</a>
+                            </li>
                          </ul>
                     </li>
-                    <li class="pull-right"><a data-toggle="tab" href="#mail">Mail</a></li>
+                    <li class="pull-right"><a data-toggle="tab" href="#mail">Kontakt</a></li>
                     <li class="pull-right"><a data-toggle="tab" href="#gpg">GPG</a></li>
+                </ul> 
+                <ul class="nav nav-justified visible-touch btn btn-lg">
+                    <li data-toggle="tab">
+                        <a class="disabled" href="#">Kamil's site</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#gpg">GPG</a></li>
+                    <li><a data-toggle="tab" href="#mail">Kontakt</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#cv"><b>CV</b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="btn-lg" data-toggle="tab" href="#cv-pl">Polski</a>
+                            </li>
+                            <li>
+                                <a class="btn-lg" data-toggle="tab" href="#cv-en">English</a>
+                            </li>
+                         </ul>
+                    </li>
                 </ul>
+
             </div>
 
             <div class="jumbotron hidden-print">
-                <h2>'Allo, 'Allo!</h2>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <!-- <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p> -->
+                <div class="container-fluid">
+                    <div class="row social">
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="https://github.com/ekamil">
+                                <i class="fa fa-lg fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="https://bitbucket.org/ekamil">
+                                <i class="fa fa-lg fa-bitbucket"></i>
+                            </a>
+                        </div> 
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" 
+                                    href="http://pl.linkedin.com/pub/kamil-essekkat/24/a37/99a/">
+                                <i class="fa fa-lg fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row cv cv-pl">
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="#cv-pl">CV (polskie)</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="files/cv-pl.pdf">
+                                <i class="fa fa-download"></i> pdf</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="files/cv-pl.docx">
+                                <i class="fa fa-download"></i> docx</a>
+                        </div>
+                    </div>
+                    <div class="row cv cv-en">
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="#cv-en">CV (en)</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="files/cv-en.pdf">
+                                <i class="fa fa-download"></i> pdf</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a role="button" class="btn btn-block btn-link" href="files/cv-en.docx">
+                                <i class="fa fa-download"></i> docx</a>
+                        </div>
+                    </div>
+                    <div class="row instead-menu">
+                        <div class="col-md-6">
+                            <a role="button" class="btn btn-block btn-link" href="#gpg">GPG</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a role="button" class="btn btn-block btn-link" href="#mail">Kontakt</a>
+                        </div>
+                    </div>
+                    <div class="row external ">
+                        <div class="col-md-6">
+                            <a role="button" class="btn btn-block btn-link" href="http://git.essekkat.pl">cgit</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a role="button" class="btn btn-block btn-link" href="http://deb.essekkat.pl">deb repo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row marketing">
                 <div class="tab-content">
                     <div class="tab-pane" id="cv-pl">
+                        <div class="cv-download">
+                            Ściągnij jako:
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-default" href="files/cv-pl.pdf">pdf</a>
+                                <a type="button" class="btn btn-default" href="files/cv-pl.docx">docx</a>
+                            </div>
+                        </div>
+                        <div class="cv-target"></div>
                     </div>
 
                     <div class="tab-pane" id="cv-en">
+                        <div class="cv-download">
+                            Download as:
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-default" href="files/cv-en.pdf">pdf</a>
+                                <a type="button" class="btn btn-default" href="files/cv-en.docx">docx</a>
+                            </div>
+                        </div>
+                        <div class="cv-target"></div>
                     </div>
 
                     <div  class="tab-pane" id="gpg">
-                        <h4>GPG</h4>
+                        <h3>mail</h3>
                         <p>ID aktualnego klucza to <code>598C2A2D</code>, fingerprint: 
                         <code>7B60 0895 08F7 40BE 59D0 487F 696E AE84 598C 2A2D</code> </p>
                         <a class="btn btn-info btn-sm" role="button" href="files/kamil_e.asc">Pobierz</a>
-                        <span class="hidden-xs">Lub <button id="pubkey-show" type="button" class="btn btn-info btn-sm hidden-xs">Pokaż klucz</button>
-                        <pre id="pubkey" class="pre-scrollable"></pre></span>
+                        <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
+                                        id="pubkey" type="button" >Pokaż klucz</button>
+                            <pre id="pubkey-target" class="pre-scrollable"></pre>
+                        </div>
+                        <h3>apt</h3>
+                        <p>Id: <code>90EB7B11</code>, fingerprint: 
+                        <code>9EFF 6095 D11E AD02 4BA2  C481 BB18 ADA7 90EB 7B11</code> </p>
+                        <p>Dopisanie do apt:
+                        <code>
+                            wget http://deb.essekkat.pl/debian.asc -O - | apt-key add -
+                        </code></p>
+                        <a class="btn btn-info btn-sm" role="button" href="files/debian.asc">Pobierz</a>
+                        <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
+                                        id="pubkey-apt" type="button" >Pokaż klucz</button>
+                            <pre id="pubkey-apt-target" class="pre-scrollable"></pre>
+                        </div>
                     </div>
 
                     <div class="tab-pane" id="mail">
-                        <h4>Mail</h4>
+                        <h4>Kontakt</h4>
                         <p><a href="mailto:kamil [at] essekkat.pl">kamil[at]essekkat.pl</a></p>
                     </div>
-
 
                 </div>
             </div>
 
             <div class="footer hidden-print">
-                <p>♥ from the Yeoman team</p>
+                <a href=""><i class="fa fa-home" ></i>Back to home</a>
+                <p>Bootstrapped with Yeoman</p>
             </div>
 
         </div>

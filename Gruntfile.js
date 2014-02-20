@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                 port: 9000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
@@ -326,6 +326,7 @@ module.exports = function (grunt) {
                         'files/*',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
+                        'bower_components/font-awesome/fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
                     ]
                 }]
@@ -381,7 +382,9 @@ module.exports = function (grunt) {
                     'mkdir new.essekkat.pl/scripts',
                     'mkdir new.essekkat.pl/files',
                     'mkdir new.essekkat.pl/bower_components',
-                    'mkdir new.essekkat.pl/bower_components/modernizr'
+                    'mkdir new.essekkat.pl/bower_components/modernizr',
+                    'mkdir new.essekkat.pl/bower_components/font-awesome',
+                    'mkdir new.essekkat.pl/bower_components/font-awesome/fonts'
                 ],
                 options: {
                     ignoreErrors: true,

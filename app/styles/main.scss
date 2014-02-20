@@ -1,8 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$fa-font-path:   "/bower_components/font-awesome/fonts";
 $cf: #cfcfcf;
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import "font-awesome/scss/font-awesome";
+
 @import 'cv.scss';
+@import 'landing.scss';
 
 .browsehappy {
     margin: 0.2em 0;
@@ -11,7 +15,6 @@ $cf: #cfcfcf;
     padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -43,20 +46,36 @@ body {
 
     background-color: #00369b;
     color: $cf;
+
+    ul.nav {
+        font-size: 14px;
+        padding: 20px 20px 20px 5px;
+
+        ul.dropdown-menu {
+            margin: 0;
+            background-color: $cf;
+            padding: 0px 0px;
+            border-radius: 6px;
+            li {
+                border-radius: 6px;
+            }
+        }
+    }
 }
 
-div.header ul.nav ul.dropdown-menu {
-    margin: 0;
+html.no-touch div.header ul.nav {
+    li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
 }
 
-div.header ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
+.nav > li:first-of-type {
+    a, button {
+        background-color: transparent !important;
+        color: $cf !important;
+    }
 }
 
-.nav > li.pull-left > a {
-    background-color: transparent !important;
-    color: $cf !important;
-}
 /* Custom page footer */
 .footer {
     padding-top: 19px;
@@ -68,21 +87,11 @@ div.header ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin: 30px 0;
 }
 
-#pubkey {
-    display: none;
 
-}
-
-pre#pubkey {
-    width: 45em;
-}
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
+#gpg {
+    pre {
+        display: none;
+        width: 45em;
     }
 }
 
@@ -122,5 +131,24 @@ pre#pubkey {
 @media screen and (max-width: 768px) {
     code {
         white-space: normal !important;
+    }
+}
+
+/* Tablets */
+@media screen {
+    html.touch .visible-touch {
+        display: inherit !important;
+    }
+
+    html.no-touch .visible-touch {
+        display: none !important;
+    }
+
+    html.touch .visible-notouch {
+        display: none !important;
+    }
+
+    html.no-touch .visible-notouch {
+        display: inherit !important;
     }
 }

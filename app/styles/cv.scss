@@ -1,8 +1,12 @@
 @media screen {
-    div#cv-pl, div#cv-en {
+    .cv-target {
         h1 {
             display: none;
             }
+
+        h2 {
+            font-size: 24px;
+        }
 
         a {
             color: #000033;
@@ -17,18 +21,21 @@
         table {
             padding: 8px;
             text-align: center;
-            border-width: 0px;
-            border-spacing: 2px;
-        }
 
-        table td {
-            padding: 3px;
-        }
+            tr:not(:first-of-type) {
+                padding: 3px;
+                border-top: 2px solid #fff;
+            }
 
-        table th {
-            border-width: 0px;
-            padding: 3px;
+            tr > td:nth-of-type(2) {
+                text-align: right !important;
+            }
         }
+    }
+}
 
+.cv-download .btn-group {
+    a.btn {
+        background-color: azure;
     }
 }
