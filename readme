@@ -1,5 +1,7 @@
+Prereq
+apt-get install pandoc rst2pdf
+
 Master file:
 cv-pl.rst (RestructuredText)
-  pandoc -> odt
-  pandoc -> html
+  pandoc -> odt, html, latex
   rst2pdf -> pdf
