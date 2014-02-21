@@ -1,6 +1,8 @@
 Kamil Essekkat
 ==============
 
+Dane osobowe
+------------
 +------------------+---------------------------------------------------+
 | Data urodzenia   | 16.03.1990                                        |
 +------------------+---------------------------------------------------+
@@ -10,15 +12,6 @@ Kamil Essekkat
 +------------------+---------------------------------------------------+
 
 .. raw:: html
-
-   <div class="hidden-print">
-
-Wersje online tego CV: `PDF <http://essekkat.pl/files/cv-pl.pdf>`_,
-`HTML <http://essekkat.pl/#cv-pl>`_
-
-.. raw:: html
-
-   </div>
 
    <div class="visible-print">
 
@@ -98,8 +91,7 @@ Działalność studencka
 **2009 – 2010** Członkostwo w Studenckim Kole Naukowym Informatyki
 Szkoły Głównej Handlowej w Warszawie (`SKNI <http://www.skni.org/>`_)
 
--  Prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI
-   (`WAS <http://was.skni.org/>`_)
+-  Prowadzenie kursów Pythona i MS Access w ramach Warsztatów@SKNI (`WAS <http://was.skni.org/>`_)
 -  Współorganizacja konferencji OpenMind
 -  Współtworzenie strony głównej `SKNI <http://www.skni.org/>`_ (Joomla)
 

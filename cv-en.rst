@@ -1,6 +1,8 @@
 Kamil Essekkat
 ==============
 
+Personal
+--------
 +------------------+---------------------------------------------------+
 | Date of birth    | 16.03.1990                                        |
 +------------------+---------------------------------------------------+
@@ -10,15 +12,6 @@ Kamil Essekkat
 +------------------+---------------------------------------------------+
 
 .. raw:: html
-
-   <div class="hidden-print">
-
-This CV online: `PDF <http://essekkat.pl/files/cv-pl.pdf>`_,
-`HTML <http://essekkat.pl/#cv-pl>`_
-
-.. raw:: html
-
-   </div>
 
    <div class="visible-print">
 
@@ -38,7 +31,7 @@ Maintenance and development of internal tools - mainly written in Python.
 Integration of third-party CI/QA tools into projects' infrastructure.
 Maintenance and support of test environments.
 
-**05.2010 - 10.2010: wcinamy.pl** - developer Python & JavaScript
+**05.2010 - 10.2010: wcinamy.pl** - Python & JavaScript developer
                     
 Developing Django-based site. Wcinamy.pl was meant to help find restaurants in a distance-aware way.
 
