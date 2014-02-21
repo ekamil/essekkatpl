@@ -3,6 +3,5 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
 
-    // ga('create', 'UA-48118936-1', 'essekkat.pl');
-    ga('create',    'UA-XXXXXXXX-Y', 'essekkat.pl');
+    ga('create', 'UA-48118936-1', 'essekkat.pl');
     ga('send', 'pageview');
