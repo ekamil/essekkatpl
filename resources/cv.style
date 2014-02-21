@@ -108,14 +108,6 @@ styles:
             [ROWBACKGROUNDS, [0, 0], [-1, -1], [white,#E0E0E0]]
             [BOX, [ 0, 0 ], [ -1, -1 ], 0.25, white ]
 
-  cv-table:
-    parent: table
-
-  footer:
-    fontSize: 8
-    textColor: grey
-
-  cv-small:
     fontSize: 8
     textColor: grey
 
