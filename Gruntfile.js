@@ -399,6 +399,15 @@ module.exports = function (grunt) {
                     ignoreErrors: true,
                     config: 'hertz'
                 }
+            },
+            chmod: {
+                command: [
+                    'chmod -R a+rX new.essekkat.pl'
+                ],
+                options: {
+                    ignoreErrors: true,
+                    config: 'hertz'
+                }
             }
         },
 
@@ -506,7 +515,8 @@ module.exports = function (grunt) {
             'build',
             'sshexec:clean',
             'sshexec:predeploy',
-            'sftp:deploy'
+            'sftp:deploy',
+            'sshexec:chmod'
         ]);
 
     grunt.registerTask('default', [
