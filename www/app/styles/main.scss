@@ -1,0 +1,154 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$fa-font-path:   "/bower_components/font-awesome/fonts";
+$cf: #cfcfcf;
+
+@import 'sass-bootstrap/lib/bootstrap';
+@import "font-awesome/scss/font-awesome";
+
+@import 'cv.scss';
+@import 'landing.scss';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $cf;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    background-color: #00369b;
+    color: $cf;
+
+    ul.nav {
+        font-size: 14px;
+        padding: 20px 20px 20px 5px;
+
+        ul.dropdown-menu {
+            margin: 0;
+            background-color: $cf;
+            padding: 0px 0px;
+            border-radius: 6px;
+            li {
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+html.no-touch div.header ul.nav {
+    li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
+}
+
+.nav > li:first-of-type {
+    a, button {
+        background-color: transparent !important;
+        color: $cf !important;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+#gpg {
+    pre {
+        display: none;
+        width: 45em;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    code {
+        white-space: normal !important;
+    }
+}
+
+/* Tablets */
+@media screen {
+    html.touch .visible-touch {
+        display: inherit !important;
+    }
+
+    html.no-touch .visible-touch {
+        display: none !important;
+    }
+
+    html.touch .visible-notouch {
+        display: none !important;
+    }
+
+    html.no-touch .visible-notouch {
+        display: inherit !important;
+    }
+}

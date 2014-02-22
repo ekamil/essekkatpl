@@ -1,0 +1,43 @@
+/* Landing page */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+
+    a {
+        color: black !important;
+    }
+
+    .btn {
+        font-size: 14px;
+        line-height: 200%;
+        margin: 5px;
+        background-color: lightblue;
+        opacity: 0.7;
+    }
+    
+    .btn:hover {
+        opacity: 1;
+    }
+    
+    .btn-link {
+        border-color: #fff;
+    }
+    
+    .row.social .btn {
+        background-color: teal;
+    }
+
+    .row.cv {
+        div:first-of-type .btn {
+            background-color: steelblue;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: lightblue;
+        }
+    }
+
+    .row.instead-menu .btn {
+        background-color: steelblue;
+    }
+}

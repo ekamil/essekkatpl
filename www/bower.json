@@ -1,0 +1,13 @@
+{
+  "name": "moja",
+  "private": true,
+  "dependencies": {
+    "sass-bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "font-awesome": "~4.0.3"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1"
+  }
+}

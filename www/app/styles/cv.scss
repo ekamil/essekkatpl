@@ -1,0 +1,59 @@
+@media screen {
+    .cv-target {
+        h1 {
+            display: none;
+            }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        a {
+            color: #000033;
+            text-decoration: none
+        }
+
+        .footer,.cv-small {
+            font-size: 11px;
+            color: #333333;
+        }
+
+        table {
+            padding: 8px;
+            text-align: center;
+
+            tr:not(:first-of-type) {
+                padding: 3px;
+                border-top: 2px solid #fff;
+            }
+
+            tr > td:nth-of-type(2) {
+                text-align: right !important;
+            }
+        }
+    }
+}
+
+.cv-download .btn-group {
+    a.btn {
+        background-color: azure;
+    }
+}
+
+.standalone {
+    .cv-target h1 {
+        display: inherit !important;
+        font-size: 18px;
+        padding-left: 1em;
+    }
+    .cv-target header h1 {
+        display: inherit !important;
+        font-weight: bold;
+        font-size: 24px;
+        padding-left: 0px;
+    }
+    .row.marketing {
+        margin-top: 0px !important;
+    }
+}
+
