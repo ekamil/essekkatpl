@@ -1,0 +1,22 @@
+div.noscript {
+    display: none;
+}
+
+html.no-js {
+    i, .jumbotron, .nav.visible-touch {
+        display: none;
+    }
+
+    ul.nav li:not(:first-of-type) {
+        display: none;
+    }
+
+    div.noscript {
+        display: block !important;
+
+        .bg-danger {
+            background-color: #F2DEDE;
+        }
+    }
+
+}
