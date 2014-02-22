@@ -1,4 +1,7 @@
-*.pdf
-www/cv_*.html
-www/cv_*.tex
 resume/build/
+*.swp
+.tmp
+.sass-cache
+www/node_modules
+www/dist
+www/app/bower_components
