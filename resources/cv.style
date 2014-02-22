@@ -113,3 +113,7 @@ styles:
 
   screen-only:
     fontSize: 0
+
+  footer:
+    fontSize: 8
+    textColor: grey
