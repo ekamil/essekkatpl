@@ -340,79 +340,7 @@ module.exports = function (grunt) {
             }
         },
 
-        sshconfig: {
-            'hertz': {
-                host: 'hertz.megiteam.pl',
-                username: 'hertz',
-                privateKey: grunt.file.read('/home/kamil/.ssh/to_hertz'),
-            }
-        },
-
-    
-        sftp: {
-            deploy: {
-                files: {
-                    './': 'dist/**'
-                },
-                options: {
-                    path: '/home/hertz/www/new.essekkat.pl',
-                    srcBasePath: 'dist/',
-                    showProgress: true,
-                    config: 'hertz'
-                }
-            },
-            dev: {
-                files: {
-                    './': ['app/*html', 'app/scripts/*', 'app/styles/*']
-                },
-                options: {
-                    path: '/home/hertz/www/new.essekkat.pl',
-                    srcBasePath: 'app/',
-                    showProgress: true,
-                    config: 'hertz'
-                }
-            }
-        },
-
-        sshexec: {
-            predeploy: {
-                command: [
-                    'mkdir new.essekkat.pl',
-                    'mkdir new.essekkat.pl/styles',
-                    'mkdir new.essekkat.pl/scripts',
-                    'mkdir new.essekkat.pl/files',
-                    'mkdir new.essekkat.pl/bower_components',
-                    'mkdir new.essekkat.pl/bower_components/modernizr',
-                    'mkdir new.essekkat.pl/bower_components/font-awesome',
-                    'mkdir new.essekkat.pl/bower_components/font-awesome/fonts'
-                ],
-                options: {
-                    ignoreErrors: true,
-                    config: 'hertz'
-                }
-            },
-            clean: {
-                command: [
-                    'rm -vr new.essekkat.pl/*'
-                ],
-                options: {
-                    ignoreErrors: true,
-                    config: 'hertz'
-                }
-            },
-            chmod: {
-                command: [
-                    'chmod -R a+rX new.essekkat.pl'
-                ],
-                options: {
-                    ignoreErrors: true,
-                    config: 'hertz'
-                }
-            }
-        },
-
-
-
+  
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
         modernizr: {
@@ -491,20 +419,11 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'insert:dist',
         'modernizr',
         'rev',
         'usemin',
         'htmlmin'
     ]);
-
-    grunt.registerTask('deploy', [
-            'build',
-            'sshexec:clean',
-            'sshexec:predeploy',
-            'sftp:deploy',
-            'sshexec:chmod'
-        ]);
 
     grunt.registerTask('default', [
         'newer:jshint',
