@@ -4,7 +4,7 @@ out := build
 
 PDF_OPT  = --compressed
 PDF_OPT += --stylesheets=resources/cv.style
-PDF_OPT += --strip-elements-with-class=visible-screen
+# PDF_OPT += --strip-elements-with-class=visible-screen
 PDF_OPT += --font-path=resources/fonts
 pandoc = pandoc --from rst --to
 

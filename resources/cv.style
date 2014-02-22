@@ -105,7 +105,6 @@ styles:
     commands: []
             [VALIGN, [ 0, 0 ], [ -1, -1 ], BOTTOM ]
             [INNERGRID, [ 0, 0 ], [ -1, -1 ], 0.25, black ]
-            [ROWBACKGROUNDS, [0, 0], [-1, -1], [white,#E0E0E0]]
             [BOX, [ 0, 0 ], [ -1, -1 ], 0.25, white ]
 
     fontSize: 8
