@@ -40,6 +40,20 @@
     }
 }
 
-.standalone .cv-target h1 {
-    display: inherit !important;
+.standalone {
+    .cv-target h1 {
+        display: inherit !important;
+        font-size: 18px;
+        padding-left: 1em;
+    }
+    .cv-target header h1 {
+        display: inherit !important;
+        font-weight: bold;
+        font-size: 24px;
+        padding-left: 0px;
+    }
+    .row.marketing {
+        margin-top: 0px !important;
+    }
 }
+
