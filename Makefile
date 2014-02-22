@@ -1,27 +1,30 @@
-SHELL := /usr/bin/zsh
-RSYNC := rsync --delete-before -r
+dist=www/dist
 
-MEGI_SSH_HOST := hertz
-MEGI_URL      := http://www1.hertz.megiteam.pl
-MEGI_WWW_PATH := ~/essekkat.pl
+standalone = www/app/cv-pl.s.html www/app/cv-en.s.html
+files = www/app/files/cv-en.docx www/app/files/cv-en.html www/app/files/cv-en.pdf www/app/files/cv-pl.docx www/app/files/cv-pl.html www/app/files/cv-pl.pdf
 
-all: clean cv deploy
+$(standalone):
+	cd resume && make formats=.s.html out=../www/app
 
-dist: clean clean-remote deploy
+$(files):
+	cd resume && make formats='pdf html docx' out=../www/app/files
 
-cv:
-	cd resume && make
-	cp resume/build/cv* www/
+$(dist): $(standalone) $(files)
+	cd www && grunt build
 
-clean-remote: clean-lao clean-megi
 
-deploy:
-	$(RSYNC) www/ $(MEGI_SSH_HOST):$(MEGI_WWW_PATH)/
-	ssh $(MEGI_SSH_HOST) 'chmod -R 755 $(MEGI_WWW_PATH)'
+ssh_host := hertz
+ssh_dir := /home/hertz/www/essekkat.pl
+rsync := rsync --delete-before -r
 
-clean-megi:
-	ssh $(MEGI_SSH_HOST) 'rm -r $(MEGI_WWW_PATH)/*'
+
+deploy: $(dist)
+	$(rsync) $(dist)/ $(ssh_host):$(ssh_dir)/
+	ssh $(ssh_hosT) 'CHMod -R 755 $(ssh_dir)'
+
+clean-remote:
+	ssh $(ssh_host) 'rm -r $(ssh_dir)/*'
 
 clean:	
-	@-rm www/cv_*
-	@-rm -r resume/build
+	cd www && grunt clean
+	cd resume && make clean
