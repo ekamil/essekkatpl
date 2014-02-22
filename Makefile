@@ -30,7 +30,7 @@ rsync := rsync --delete-before -r
 
 deploy: $(dist)
 	$(rsync) $(dist)/ $(ssh_host):$(ssh_dir)/
-	ssh $(ssh_hosT) 'CHMod -R 755 $(ssh_dir)'
+	ssh $(ssh_host) 'chmod -R 755 $(ssh_dir)'
 
 clean-remote:
 	ssh $(ssh_host) 'rm -r $(ssh_dir)/*'
