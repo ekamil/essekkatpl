@@ -1,4 +1,4 @@
-all: deploy
+all: rebuild deploy
 
 dist=www/dist
 
@@ -21,6 +21,9 @@ www/node_modules:
 	cd www && npm install
 
 $(dist): $(standalone) $(files) www/node_modules $(gpg)
+	cd www && grunt build
+
+rebuild:
 	cd www && grunt build
 
 ssh_host := hertz
