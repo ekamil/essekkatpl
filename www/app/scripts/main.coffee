@@ -23,7 +23,13 @@ class ButtonGetter
 
 
 class GPGButton extends ButtonGetter
+    constructor: (@trigger, @src) ->
+        @dest = @trigger.siblings('.target')
+        console.log @dest
+        super(@trigger, @dest, @src)
+
     activate: ->
+        console.log @dest
         super
         @trigger.html("Ukryj klucz")
 
@@ -68,6 +74,11 @@ $('.nav a[href="#"]').on 'click', (e) ->
     e.preventDefault()
 
 
+$('textarea.pubkey-apt-target').on 'click', (e) ->
+    this.focus()
+    this.select()
+
+
 # location hash
 $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
     if e.target.href
@@ -94,7 +105,7 @@ $('.jumbotron a[role="button"]').on 'click', (event) ->
         $(".nav a[href=#{this.hash}]")?.tab('show')
 
 
-(new GPGButton $('#pubkey'), $("#pubkey-target"), 'files/kamil_e.asc').listen()
-(new GPGButton $('#pubkey-apt'), $("#pubkey-apt-target"), 'files/debian.asc').listen()
+(new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
+(new GPGButton $('#pubkey-apt'), 'files/debian.asc').listen()
 (new CVTab('cv-pl')).listen()
 (new CVTab('cv-en')).listen()

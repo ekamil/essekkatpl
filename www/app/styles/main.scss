@@ -89,11 +89,12 @@ html.no-touch div.header ul.nav {
 }
 
 
-#gpg {
-    pre {
-        display: none;
-        width: 45em;
-    }
+#gpg textarea {
+    @extend pre;
+    @extend .pre-scrollable;
+    display: none;
+    width: 45em;
+    resize: none; 
 }
 
 /* Supporting marketing content */
