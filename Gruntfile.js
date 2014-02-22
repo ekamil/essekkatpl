@@ -450,10 +450,15 @@ module.exports = function (grunt) {
                 match: '//GASCRIPT'
             },
             cvpl: {
-                src: 'app/cv_pl.html',
-                dest: 'dist/index.html',
-                match: '//CVPL'
+                src: 'app/files/cv-pl.html',
+                dest:  'dist/cv-pl-s.html',
+                match: '//CV'
             },
+            cven: {
+                src: 'app/files/cv-en.html',
+                dest:  'dist/cv-en-s.html',
+                match: '//CV'
+            }
         }
     });
 
@@ -527,7 +532,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('insert:dist', [
             'insert:ga',
-            'insert:cvpl'
+            'insert:cvpl',
+            'insert:cven'
         ]);
 
 };
