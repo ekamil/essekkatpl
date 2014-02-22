@@ -5,3 +5,5 @@ resume/build/
 www/node_modules
 www/dist
 www/app/bower_components
+www/app/files/cv-*
+www/app/cv-*.s.html
