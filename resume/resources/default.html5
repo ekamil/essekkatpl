@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kamil Essekkat</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+
+        <div class="container standalone">
+            <div class="row marketing">
+                    <div class="tab-pane" id="cv-en">
+                        <div class="cv-target">
+                            $for(include-before)$
+                            $include-before$
+                            $endfor$
+                            $if(title)$
+                            <header>
+                            <h1 class="title">$title$</h1>
+                            $if(subtitle)$
+                            <h1 class="subtitle">$subtitle$</h1>
+                            $endif$
+                            $for(author)$
+                            <h2 class="author">$author$</h2>
+                            $endfor$
+                            $if(date)$
+                            <h3 class="date">$date$</h3>
+                            $endif$
+                            </header>
+                            $endif$
+                            $if(toc)$
+                            <nav id="$idprefix$TOC">
+                            $toc$
+                            </nav>
+                            $endif$
+                            $body$
+                            $for(include-after)$
+                            $include-after$
+                            $endfor$
+                        </div>
+                        <div class="cv-download hidden-print">
+                            <hr />
+                            $if(cv-en)$
+                            Download as:
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-default" href="files/cv-en.pdf">pdf</a>
+                                <a type="button" class="btn btn-default" href="files/cv-en.docx">docx</a>
+                            </div>
+                            $endif$
+                            $if(cv-pl)$
+                            Ściągnij jako:
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-default" href="files/cv-pl.pdf">pdf</a>
+                                <a type="button" class="btn btn-default" href="files/cv-pl.docx">docx</a>
+                            </div>
+                            $endif$
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer hidden-print">
+                <a href="/"><i class="fa fa-home" ></i>Back to home</a>
+                <p>Bootstrapped with Yeoman</p>
+            </div>
+
+        </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+            ga('create', 'UA-48118936-1', 'essekkat.pl');
+            ga('send', 'pageview');
+        </script>
+</body>
+</html>
