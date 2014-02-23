@@ -105,6 +105,12 @@ $('.jumbotron a[role="button"]').on 'click', (event) ->
         $(".nav a[href=#{this.hash}]")?.tab('show')
 
 
+$('textarea.target').on 'click', (event) ->
+    this.focus()
+    this.select()
+
+
+
 (new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
 (new GPGButton $('#pubkey-apt'), 'files/debian.asc').listen()
 (new CVTab('cv-pl')).listen()
