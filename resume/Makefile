@@ -1,6 +1,6 @@
 sources := cv-pl.rst cv-en.rst
 formats = pdf html latex docx s.html
-out := build
+out := $(PWD)
 
 PDF_OPT  = --compressed
 PDF_OPT += --stylesheets=resources/cv.style
@@ -33,13 +33,12 @@ all: $(out) $(RESULT)
 .rst.docx:
 	$(docx) $< -o $(out)/$@
 
+.SUFFIXES: .rst $(foreach f, $(formats), .$(f) )
 
 $(out):
 	-mkdir $(out)
-	touch $(out)
 
 clean:	
-	@-rm  -f $(out)/*
+	@-rm  -f $(foreach r, $(RESULT), $(out)/$(r) )
 
-
-.SUFFIXES: .rst $(foreach f, $(formats), .$(f) )
+.PHONY: clean
