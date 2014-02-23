@@ -1,36 +1,56 @@
-all: rebuild deploy
-
-dist=www/dist
-
-standalone = www/app/cv-pl.s.html www/app/cv-en.s.html
-files = www/app/files/cv-en.docx www/app/files/cv-en.html www/app/files/cv-en.pdf www/app/files/cv-pl.docx www/app/files/cv-pl.html www/app/files/cv-pl.pdf
-
-$(standalone):
-	cd resume && make formats=s.html out=../www/app
-
-$(files):
-	cd resume && make formats='pdf html docx' out=../www/app/files
-
-gpg = www/app/files/kamil_e.asc www/app/files/debian.asc
-$(gpg):
-	gpg --export --armor 598C2A2D > www/app/files/kamil_e.asc 
-	gpg --export --armor 90EB7B11 > www/app/files/debian.asc 
-
-www/node_modules:
-	cd www && bower install
-	cd www && npm install
-
-$(dist): $(standalone) $(files) www/node_modules $(gpg)
-	cd www && grunt build
-
-rebuild:
-	cd www && grunt build
-
+# configuration
 ssh_host := hertz
 ssh_dir := /home/hertz/www/essekkat.pl
+langs = pl en
+formats = pdf docx html latex
+
+##### variables
+www=$(PWD)/www
+dist=$(PWD)/www/dist
+app=$(PWD)/www/app
+
+standalone = $(foreach l, $(langs), $(app)/cv-$(l).s.html)
+files = $(foreach f, $(formats), $(foreach l, $(langs), $(app)/files/cv-$(l).$(f) ) )
+gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc
+
 rsync := rsync --delete-before -r
 
+## default target
+default: deploy
 
+#### generate static files
+$(standalone):
+	cd resume && make formats=s.html out=$(app)
+
+$(files):
+	cd resume && make formats='$(formats)' out=$(app)/files
+
+$(gpg):
+	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc 
+	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc 
+
+static: $(standalone) $(files) $(gpg)
+	@touch $(standalone) $(files) $(gpg)
+
+clean-static:
+	-rm  $(standalone) $(files) $(gpg)
+
+.PHONY: static clean-static
+#### prerequisites for build
+$(www)/node_modules:
+	cd $(www) && npm install
+
+$(app)/bower_components:
+	cd $(www) && bower install
+	
+prereq: $(app)/bower_components $(www)/node_modules
+	@touch $(app)/bower_components $(www)/node_modules
+
+### build itself
+$(dist): static prereq
+	cd $(www) && grunt build
+
+## deployment
 deploy: $(dist)
 	$(rsync) $(dist)/ $(ssh_host):$(ssh_dir)/
 	ssh $(ssh_host) 'chmod -R 755 $(ssh_dir)'
@@ -38,8 +58,9 @@ deploy: $(dist)
 clean-remote:
 	ssh $(ssh_host) 'rm -r $(ssh_dir)/*'
 
-clean:	
-	-cd www && grunt clean
-	cd resume && make clean
-	rm -rf www/.sass-cache
-	rm -rf www/dist
+.PHONY: deploy clean-remote
+####
+clean:
+	@-rm -rf $(www)/.sass-cache $(www)/.tmp $(dist)
+	git clean -xf $(app)
+.PHONY: clean
