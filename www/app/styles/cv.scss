@@ -57,3 +57,8 @@
     }
 }
 
+@media print {
+    .cv-download {
+        display: none !important;
+    }
+}
