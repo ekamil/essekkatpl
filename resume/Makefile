@@ -8,8 +8,8 @@ PDF_OPT += --font-path=resources/fonts
 pandoc = pandoc --from rst --to
 
 pdf = rst2pdf $(PDF_OPT)
-html = $(pandoc) html5 --email-obfuscation=none
-htmls = $(pandoc) html5 --email-obfuscation=none --template=resources/default.html5 --standalone
+html = $(pandoc) html5 --email-obfuscation=references
+htmls = $(html) --template=resources/default.html5 --standalone
 latex = $(pandoc) latex
 docx = $(pandoc) docx
 
