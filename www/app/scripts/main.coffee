@@ -25,11 +25,9 @@ class ButtonGetter
 class GPGButton extends ButtonGetter
     constructor: (@trigger, @src) ->
         @dest = @trigger.siblings('.target')
-        console.log @dest
         super(@trigger, @dest, @src)
 
     activate: ->
-        console.log @dest
         super
         @trigger.html("Ukryj klucz")
 
