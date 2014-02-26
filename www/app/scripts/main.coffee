@@ -87,9 +87,9 @@ $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill
 # navigate to a tab when the history changes
 window.on 'popstate', (e) ->
     _tab = $(".nav a[href=#{location.hash}]")
-    if _tab:
+    if _tab
         _tab.tab('show')
-    else:
+    else
         $('.nav a[href=#]')?.tab('show')
 
 
