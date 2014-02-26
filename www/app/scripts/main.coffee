@@ -87,7 +87,7 @@ $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill
         location.href = '#'
 
 
-window.onload = () ->
+$('document').ready = () ->
     try
         if window.location.hash
             hash = window.location.hash
