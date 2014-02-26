@@ -88,11 +88,11 @@ $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill
 
 # navigate to a tab when the history changes
 window.onpopstate = (e) ->
-    _tab = $(".nav a[href=#{location.hash}]")
-    if _tab
-        _tab.tab('show')
+    _hash = window.location.hash
+    if _hash
+        $(".nav a[href=#{_hash}]").tab('show')
     else
-        $('.nav a[href=#]')?.tab('show')
+        $('.nav a[href=#]')?.click()
 
 
 $('document').ready = () ->
@@ -100,8 +100,6 @@ $('document').ready = () ->
         if window.location.hash
             hash = window.location.hash
             $(".nav a[href=#{hash}]")?.tab('show')
-        else
-            console.log "AAAA"
     catch error
         console.log error
         return
