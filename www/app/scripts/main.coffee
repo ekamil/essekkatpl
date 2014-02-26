@@ -81,19 +81,22 @@ $('textarea.pubkey-apt-target').on 'click', (e) ->
 
 # location hash
 $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
-    if e.target.href
-        location.href = e.target.href
-    else
-        location.href = '#'
+    history.pushState null, null, _href
+
+
+# navigate to a tab when the history changes
+window.on 'popstate', (e) ->
+    _tab = $(".nav a[href=#{location.hash}]")
+    if _tab:
+        _tab.tab('show')
+    else:
+        $('.nav a[href=#]')?.tab('show')
 
 
 $('document').ready = () ->
     try
         if window.location.hash
             hash = window.location.hash
-            $(".nav a[href=#{hash}]")?.tab('show')
-        else
-            hash = '#'
             $(".nav a[href=#{hash}]")?.tab('show')
     catch error
         console.log error
