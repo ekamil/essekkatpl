@@ -81,6 +81,10 @@ $('textarea.pubkey-apt-target').on 'click', (e) ->
 
 # location hash
 $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
+    if e.target.href
+        _href = e.target.href
+    else
+        _href = '#'
     history.pushState null, null, _href
 
 
