@@ -25,11 +25,9 @@ class ButtonGetter
 class GPGButton extends ButtonGetter
     constructor: (@trigger, @src) ->
         @dest = @trigger.siblings('.target')
-        console.log @dest
         super(@trigger, @dest, @src)
 
     activate: ->
-        console.log @dest
         super
         @trigger.html("Ukryj klucz")
 
@@ -82,33 +80,34 @@ $('textarea.pubkey-apt-target').on 'click', (e) ->
 # location hash
 $(document).on 'click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', (e) ->
     if e.target.href
-        location.href = e.target.href
+        _href = e.target.href
     else
-        location.href = '#'
+        _href = '#'
+    history.pushState null, null, _href
 
 
-window.onload = () ->
+# navigate to a tab when the history changes
+window.onpopstate = (e) ->
+    _hash = window.location.hash
+    if _hash
+        $(".nav a[href=#{_hash}]").tab('show')
+    else
+        $('.nav a[href=#]')?.click()
+
+
+$('document').ready = () ->
     try
         if window.location.hash
             hash = window.location.hash
-            $(".nav a[href=#{hash}]")?.tab('show')
-        else
-            hash = '#'
             $(".nav a[href=#{hash}]")?.tab('show')
     catch error
         console.log error
         return
 
 
-$('.jumbotron a[role="button"]').on 'click', (event) ->
-    if this.hash
-        $(".nav a[href=#{this.hash}]")?.tab('show')
-
-
 $('textarea.target').on 'click', (event) ->
     this.focus()
     this.select()
-
 
 
 (new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
