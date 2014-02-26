@@ -100,20 +100,16 @@ $('document').ready = () ->
         if window.location.hash
             hash = window.location.hash
             $(".nav a[href=#{hash}]")?.tab('show')
+        else
+            console.log "AAAA"
     catch error
         console.log error
         return
 
 
-$('.jumbotron a[role="button"]').on 'click', (event) ->
-    if this.hash
-        $(".nav a[href=#{this.hash}]")?.tab('show')
-
-
 $('textarea.target').on 'click', (event) ->
     this.focus()
     this.select()
-
 
 
 (new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
