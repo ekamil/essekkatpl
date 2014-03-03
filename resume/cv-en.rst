@@ -26,21 +26,39 @@ Work experience
 
 **since 10.2010: Accenture** – member of Technical Architecture Team
 
-Conducting performance tests through the stages of preparation, automatization and reporting.
-Maintenance and development of internal tools - mainly written in Python.
-Integration of third-party CI/QA tools into projects' infrastructure.
-Maintenance and support of test environments.
+- Maintenance over applications built upon JBoss and OracleDB stack
+- Setting up test environments and providing support
+- Gathering performance requirements from business users and processing them into measurable terms
+- Estimating time and work needed for tests; planning test execution
+- Manual testing as a preface to test automation
+- Automating tests within Grinder testing framework and with standalone Jython scripts
+- Scripting both GUI and WebService interfaces
+- Setting up monitoring (snmpd, Zenoss)
+- Performance tuning of OracleDB (both on query and instance levels) and of JVM
+- Working closely with Development team on identifying and fixing performance bottlenecks
+- Reporting tests' results, including writing final reports
+- Maintenance and development of project's internal tools (Python, bash)
+- Creating build pipelines around Subversion and Jenkins
+- Integrating OpenLDAP onto existing project's infrastructure with continued service availability
+- Working closely with Development and Test teams on adjusting the development/release process
 
 **05.2010 - 10.2010: wcinamy.pl** - Python & JavaScript developer
-                    
-Developing Django-based site. Wcinamy.pl was meant to help find restaurants in a distance-aware way.
+
+Wcinamy.pl was meant to help find restaurants in a distance-aware way.
+
+- Creating Django site from scratch including static parts (HTML/CSS/JS)
+- Integrating Google Maps JavaScript API
+- Setting up Subversion with Trac
+- Collecting and implementing change requests from other team members
+- Formalizing requirements and development process
+
 
 Education
 -------------
 
 2009 – 2012
-    Bachelor studies at Warsaw School of Economics,
-    Quantitative Methods in Economics and Information Systems. Resigned.
+    Unfinished Bachelor studies at Warsaw School of Economics,
+    Quantitative Methods in Economics and Information Systems.
 
 2006 – 2009
     VI Highschool in Sosnowiec, core subjects: maths, geography
