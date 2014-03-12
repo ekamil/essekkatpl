@@ -24,7 +24,7 @@ Dane osobowe
 Doświadczenie
 -------------
 
-**od 10.2010: Accenture** – członek zespołu architektury technicznej
+**od 10.2010: Accenture** – członek zespołu architektury technicznej i infrastruktury
 
 Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja,
 raportowanie. Zarządzanie oraz rozwój wewnętrznych narzędzi
