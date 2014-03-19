@@ -114,5 +114,5 @@ styles:
     fontSize: 0
 
   footer:
-    fontSize: 8
+    fontSize: 6
     textColor: grey
