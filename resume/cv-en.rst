@@ -86,7 +86,7 @@ Operating systems
 Code management/Development
     Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
     `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
-    `Sonar <http://www.sonarsource.org/>`_, Maven, Ant
+    `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Databases
     Oracle, PostgreSQL

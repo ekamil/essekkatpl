@@ -70,7 +70,7 @@ Systemy operacyjne
 Zarządzanie kodem
     Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
     `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
-    `Sonar <http://www.sonarsource.org/>`_, Maven, Ant
+    `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Bazy danych
     Oracle, PostgreSQL
