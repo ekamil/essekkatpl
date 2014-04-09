@@ -111,6 +111,11 @@ html.no-touch div.header ul.nav {
         max-width: 730px;
     }
 
+    html.touch .container {
+        max-width: 60%;
+    }
+
+
     /* Remove the padding we set earlier */
     .header,
     .marketing,
