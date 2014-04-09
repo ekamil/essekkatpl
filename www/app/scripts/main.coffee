@@ -44,7 +44,7 @@ class GPGButton extends ButtonGetter
 
 class CVTab
     constructor: (f) ->
-        @trigger = $ ".nav a[href=##{f}]"
+        @trigger = $ "a[href=##{f}]"
         @dest = $ "##{f} > .cv-target"
         @src = "/files/#{f}.html"
         @cached = false
