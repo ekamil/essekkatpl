@@ -62,5 +62,5 @@ clean-remote:
 ####
 clean:
 	@-rm -rf $(www)/.sass-cache $(www)/.tmp $(dist)
-	git clean -xf $(app)
+	git clean -xdf $(www)
 .PHONY: clean
