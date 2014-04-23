@@ -95,7 +95,7 @@ window.onpopstate = (e) ->
         $('.nav a[href=#]')?.click()
 
 
-$('document').ready = () ->
+$.ready = () ->
     try
         if window.location.hash
             hash = window.location.hash
