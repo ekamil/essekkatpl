@@ -24,17 +24,31 @@ Dane osobowe
 Doświadczenie
 -------------
 
-**od 10.2010: Accenture** – członek zespołu architektury technicznej i infrastruktury
+**od 05.2014: Cyfrowy Polsat** - programista Python
 
-Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja,
-raportowanie. Zarządzanie oraz rozwój wewnętrznych narzędzi
-wspomagających development - głównie opartych na Pythonie. Integracja
-zewnętrznych narzędzi CI, QA z infrastrukturą projektów. Administracja
-środowiskami testowymi.
+- Rozwój dużego systemu opartego na Django
+
+**10.2010 - 04.2014: Accenture** – członek zespołu architektury technicznej i infrastruktury
+
+- Nadzór nad aplikacjami zbudowanymi z użyciem JBoss i OracleDB
+- Setup i wsparcie środowisk testowych
+- Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie.
+- Tuning wydajności na poziomie ustawień JVM
+- Tuning wydajności zapytań SQL
+- Monitoring środowisk (snmpd, Zenoss)
+- Rozwój narzędzi projektowych - głównie opartych na Pythonie.
+- Integracja zewnętrznych systemów CI, QA z infrastrukturą projektów
+- Integracja OpenLdap z infrastrukturą projektów
 
 **05.2010 – 10.2010 wcinamy.pl** – developer Python oraz JavaScript
 
 Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
+
+- Utworzenie strony w Django wraz z frontendem (HTML/CSS/JS)
+- Integracja z API Google Maps
+- Setup narzędzi do zarządzania kodem: Subversion+Trac
+- Uporządkowanie procesu zarządzania zmianą
+
 
 Wykształcenie
 -------------
@@ -73,7 +87,7 @@ Zarządzanie kodem
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Bazy danych
-    Oracle, PostgreSQL
+    Oracle, PostgreSQL, Redis
 
 Testy wydajnościowe
     `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR

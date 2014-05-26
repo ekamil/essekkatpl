@@ -24,7 +24,11 @@ Source: `http://essekkat.pl/#cv-pl <http://essekkat.pl/#cv-pl>`_
 Work experience
 ---------------
 
-**since 10.2010: Accenture** – member of Technical Architecture Team
+**since 05.2014: Cyfrowy Polsat** - Python programmer
+
+- Working on a sizeable Django-based system
+
+**10.2010 - 04.2014: Accenture** – member of Technical Architecture Team
 
 - Maintenance over applications built upon JBoss and OracleDB stack
 - Setting up test environments and providing support
@@ -89,7 +93,7 @@ Code management/Development
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Databases
-    Oracle, PostgreSQL
+    Oracle, PostgreSQL, Redis
 
 Load testing
     `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
