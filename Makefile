@@ -1,7 +1,7 @@
 # configuration
 ENV=
-ssh_host := hertz
-ssh_dir := /home/hertz/www/$(ENV)essekkat.pl
+ssh_host := tesla
+ssh_dir := /home/$(ssh_host)/www/$(ENV)essekkat.pl
 langs = pl en
 formats = pdf docx html latex
 
