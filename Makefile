@@ -1,6 +1,6 @@
 # configuration
 ENV=
-ssh_host := newton
+ssh_host := tesla
 ssh_dir := /home/$(ssh_host)/www/$(ENV)essekkat.pl
 langs = pl en
 formats = pdf docx html latex

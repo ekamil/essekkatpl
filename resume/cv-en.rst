@@ -15,7 +15,7 @@ Personal
 
    <div class="visible-print">
 
-Source: `http://essekkat.pl/#cv-pl <http://essekkat.pl/#cv-pl>`_
+Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 
 .. raw:: html
 
@@ -26,29 +26,46 @@ Work experience
 
 **since 05.2014: Cyfrowy Polsat** - Python programmer
 
-- Working on a sizeable Django-based system
+- Working on a sizeable Django-based backend system
+- Maintaining high-performance and quality of the code
 
 **10.2010 - 04.2014: Accenture** – member of Technical Architecture Team
 
+- Maintenance and development of project's internal tools (Python, bash)
+- Extending internal deployment tool (Python)
+- Automating tests within Grinder testing framework and with standalone Jython scripts
 - Maintenance over applications built upon JBoss and OracleDB stack
 - Setting up test environments and providing support
 - Gathering performance requirements from business users and processing them into measurable terms
 - Estimating time and work needed for tests; planning test execution
-- Manual testing as a preface to test automation
-- Automating tests within Grinder testing framework and with standalone Jython scripts
+- Manual testing as a prerequisite of automatic tests
 - Scripting both GUI and WebService interfaces
 - Setting up monitoring (snmpd, Zenoss)
 - Performance tuning of OracleDB (both on query and instance levels) and of JVM
 - Working closely with Development team on identifying and fixing performance bottlenecks
 - Reporting tests' results, including writing final reports
-- Maintenance and development of project's internal tools (Python, bash)
 - Creating build pipelines around Subversion and Jenkins
 - Integrating OpenLDAP onto existing project's infrastructure with continued service availability
 - Working closely with Development and Test teams on adjusting the development/release process
 
-**05.2010 - 10.2010: wcinamy.pl** - Python & JavaScript developer
+Freelance work
+--------------
+**2014: Catland.pl, Pandaland.pl**
+
+- Django backend
+- Implementing client's vision of the frontend using HTML, Sass and CoffeeScript
+- Automation of deployment on Amazon EC2
+- Performance tuning on both backend and frontend site
+
+**2014: ZjedzmyRazem.pl**
+
+- Writing backend using Django
+- Integration with third-party layout
+
+**2010: wcinamy.pl**
 
 Wcinamy.pl was meant to help find restaurants in a distance-aware way.
+Note: site as written by me is now defunct
 
 - Creating Django site from scratch including static parts (HTML/CSS/JS)
 - Integrating Google Maps JavaScript API
