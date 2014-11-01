@@ -112,5 +112,6 @@ $('textarea.target').on 'click', (event) ->
 
 (new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
 (new GPGButton $('#pubkey-apt'), 'files/debian.asc').listen()
+(new GPGButton $('#pubkey-mobile'), 'files/mobile.asc').listen()
 (new CVTab('cv-pl')).listen()
 (new CVTab('cv-en')).listen()

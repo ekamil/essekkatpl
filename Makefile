@@ -12,7 +12,7 @@ app=$(PWD)/www/app
 
 standalone = $(foreach l, $(langs), $(app)/cv-$(l).s.html)
 files = $(foreach f, $(formats), $(foreach l, $(langs), $(app)/files/cv-$(l).$(f) ) )
-gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc
+gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc $(app)/files/mobile.asc
 
 rsync := rsync --delete-before -r
 
@@ -28,6 +28,7 @@ $(files):
 
 $(gpg):
 	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc 
+	gpg --export --armor 6AEEC2FD > $(app)/files/mobile.asc 
 	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc 
 
 static: $(standalone) $(files) $(gpg)
