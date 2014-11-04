@@ -62,7 +62,7 @@ clean-remote:
 
 .PHONY: deploy clean-remote
 ####
-clean:
+clean: clean-static
 	@-rm -rf $(www)/.sass-cache $(www)/.tmp $(dist)
 	git clean -xdf $(www)
 .PHONY: clean
