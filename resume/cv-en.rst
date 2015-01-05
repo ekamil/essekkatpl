@@ -26,20 +26,27 @@ Work experience
 
 **since 05.2014: Cyfrowy Polsat** - Python programmer
 
+- Planning and creating new payment-processing application
+- Designing architecture for availability and maintainability
+- Integrating with both external and internal systems
+- Piloting use of Event Sourcing and Domain Driven Design
+- Documenting processes in BPMN, keeping documentation up-to-date
+- Automating tests in SoapUI for JSON-RPC and SOAP interfaces
 - Working on a sizeable Django-based backend system
-- Maintaining high-performance and quality of the code
+- Performance tuning of new features - on application and DB levels
+- Maintaining quality of the code (unittests, pep8 compliance)
+- Taking care of Jenkins CI jobs
 
 **10.2010 - 04.2014: Accenture** – member of Technical Architecture Team
 
 - Maintenance and development of project's internal tools (Python, bash)
-- Extending internal deployment tool (Python)
-- Automating tests within Grinder testing framework and with standalone Jython scripts
+- Extending code deployment tool (Python) integrated with Trac and SVN
 - Maintenance over applications built upon JBoss and OracleDB stack
+- Automating tests (GUI and WebService), also within Grinder framework
 - Setting up test environments and providing support
 - Gathering performance requirements from business users and processing them into measurable terms
 - Estimating time and work needed for tests; planning test execution
 - Manual testing as a prerequisite of automatic tests
-- Scripting both GUI and WebService interfaces
 - Setting up monitoring (snmpd, Zenoss)
 - Performance tuning of OracleDB (both on query and instance levels) and of JVM
 - Working closely with Development team on identifying and fixing performance bottlenecks
@@ -82,7 +89,7 @@ Education
     Quantitative Methods in Economics and Information Systems.
 
 2006 – 2009
-    VI Highschool in Sosnowiec, core subjects: maths, geography
+    VI High school in Sosnowiec, core subjects: maths, geography
 
 Foreign languages
 ------------------
@@ -105,26 +112,26 @@ Operating systems
     GNU/Linux, Windows, AIX
 
 Code management/Development
-    Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
+    Redmine, Trac, Git, SVN, `Jenkins CI <http://jenkins-ci.org/>`_,
     `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Databases
-    Oracle, PostgreSQL, Redis
+    Oracle, PostgreSQL, Redis, ElasticSearch
 
 Load testing
-    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
+    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR, SoapUI
 
 Other
-    OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat
+    OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
     Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
 
-Basic knowledge of *SAP* and *Oracle BRM* from operations perpective.
+Basic knowledge of *SAP* and *Oracle BRM* from operations perspective.
 
 Academic activity
 ---------------------
 
-**2009 - 2010** Acitivity in Student Association for Computer Science at WSE (`SKNI <http://www.skni.org/>`_)
+**2009 - 2010** Activity in Student Association for Computer Science at WSE (`SKNI <http://www.skni.org/>`_)
 
 - Co-organisation of the OpenMind conference
 - Teaching fellow students Python and MS Access as part of `Warsztaty@SKNI <http://was.skni.org/>`_.

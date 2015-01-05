@@ -26,21 +26,48 @@ Doświadczenie
 
 **od 05.2014: Cyfrowy Polsat** - programista Python
 
-- Rozwój dużego systemu opartego na Django
+- Planowanie, projektowanie i tworzenie nowej aplikacji do przetwarzania płatności
+- Integracja z systemami wewnętrznymi i zewnętrznymi
+- Pilotażowe wdrożenie Event Sourcing i Domain Driven Design
+- Tworzenie dokumentacji procesów z użyciem BPMN
+- Automatyzacja testów w SoapUI dla interfejsów SOAP i JSON-RPC
+- Rozwój i utrzymanie dużego systemu opartego na Django
+- Tuning wydajności nowych funkcjonalności na poziomie aplikacji i bazy
+- Utrzymanie jakości kodu (unittesty, pep8)
+- Utrzymanie Jenkins CI
 
 **10.2010 - 04.2014: Accenture** – członek zespołu architektury technicznej i infrastruktury
 
-- Nadzór nad aplikacjami zbudowanymi z użyciem JBoss i OracleDB
-- Setup i wsparcie środowisk testowych
-- Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie.
-- Tuning wydajności na poziomie ustawień JVM
-- Tuning wydajności zapytań SQL
+- Rozwój i utrzymanie wewnętrznych narzędzi (Python, bash)
+- Rozwój wewnętrznego narzędzia deploymentu (Python) zintegrowanego z Subversion i Trac
+- Automatyzacja testów GUI oraz WebService'ów, również z użyciem Grinder
+- Nadzór nad aplikacjami opartymi o platformę JBoss i bazę OracleDB
+- Setup i wsparcie środowisk
+- Prowadzenie testów wydajnościowych - przygotowanie, automatyzacja, raportowanie
+- Planowanie i szacowanie czasochłonności testów
 - Monitoring środowisk (snmpd, Zenoss)
-- Rozwój narzędzi projektowych - głównie opartych na Pythonie.
+- Tuning wydajności bazy danych Oracle (ustawień i zapytań) oraz JVM
+- Współpraca z innymi zespołami przy identyfikacji i rozwiązywaniu problemów wydajnościowych
+- Raportowanie wyników i wniosków z testów do zlecających
 - Integracja zewnętrznych systemów CI, QA z infrastrukturą projektów
 - Integracja OpenLdap z infrastrukturą projektów
 
-**05.2010 – 10.2010 wcinamy.pl** – developer Python oraz JavaScript
+Freelance
+---------
+
+**2014: Catland.pl, Pandaland.pl**
+
+- Backend w Django
+- Implementacja frontendu na podstawie projektu graficznego
+- Wdrożenie z użyciem Amazon EC2 i CloudFront
+- Tuning wydajności (również zagadnienia wyłączeni frontendowe)
+
+**2014: ZjedzmyRazem.pl**
+
+- Backend w Django
+- Integracja z dostarczonym frontendem
+
+**2010: wcinamy.pl** – developer Python oraz JavaScript
 
 Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
 
@@ -54,9 +81,9 @@ Wykształcenie
 -------------
 
 2009 – 2012
-    Studia stacjonarne licencjackie w Szkole Głównej Handlowej w
+    Nieukończone studia stacjonarne licencjackie w Szkole Głównej Handlowej w
     Warszawie na kierunku Metody Ilościowe w Ekonomii i Systemy
-    Informacyjne (rezygnacja)
+    Informacyjne
 
 2006 – 2009
     VI Niepubliczne Liceum w Sosnowcu, profil mat.-geo.
@@ -82,18 +109,18 @@ Systemy operacyjne
     GNU/Linux, Windows, AIX
 
 Zarządzanie kodem
-    Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
+    Redmine, Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
     `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Bazy danych
-    Oracle, PostgreSQL, Redis
+    Oracle, PostgreSQL, Redis, ElasticSearch
 
 Testy wydajnościowe
-    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
+    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR, SoapUI
 
 Pozostałe
-    OpenLdap, WebMethods Integration Server, JBoss, Tomcat, Red Hat
+    OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
     Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
 
 Podstawowa znajomość *SAP* oraz *Oracle BRM* od strony instalacji i
