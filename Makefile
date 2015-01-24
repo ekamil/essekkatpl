@@ -23,8 +23,12 @@ default: deploy
 $(standalone):
 	cd resume && make formats=s.html out=$(app)
 
+.PHONY: $(standalone)
+
 $(files):
 	cd resume && make formats='$(formats)' out=$(app)/files
+
+.PHONY: $(files)
 
 $(gpg):
 	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc 
