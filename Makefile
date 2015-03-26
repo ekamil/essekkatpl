@@ -1,7 +1,9 @@
 # configuration
-ENV=
-ssh_host := tesla
-ssh_dir := /home/$(ssh_host)/www/$(ENV)essekkat.pl
+gh_pages_repo = git@github.com:ekamil/ekamil.github.io.git
+gh_pages_dir = gh_pages
+
+revision = $(shell git rev-parse --short=6 HEAD)
+
 langs = pl en
 formats = pdf docx html latex
 
@@ -16,27 +18,27 @@ gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc $(app)/files/mobile.asc
 
 rsync := rsync --delete-before -r
 
+
 ## default target
 default: deploy
 
+
 #### generate static files
-$(standalone):
-	cd resume && make formats=s.html out=$(app)
+cv:
+	cd resume && make langs='$(langs)' formats='$(formats)' out=$(app)/files
+	cd resume && make langs='$(langs)' formats=s.html out=$(app)
 
-.PHONY: $(standalone)
+.PHONY: cv
 
-$(files):
-	cd resume && make formats='$(formats)' out=$(app)/files
+gpg:
+	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc
+	gpg --export --armor 6AEEC2FD > $(app)/files/mobile.asc
+	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc
 
-.PHONY: $(files)
+.PHONY: gpg
 
-$(gpg):
-	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc 
-	gpg --export --armor 6AEEC2FD > $(app)/files/mobile.asc 
-	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc 
-
-static: $(standalone) $(files) $(gpg)
-	@touch $(standalone) $(files) $(gpg)
+static: cv gpg
+	@touch  $(standalone) $(files) $(gpg)
 
 clean-static:
 	-rm  $(standalone) $(files) $(gpg)
@@ -48,7 +50,7 @@ $(www)/node_modules:
 
 $(app)/bower_components:
 	cd $(www) && bower install
-	
+
 prereq: $(app)/bower_components $(www)/node_modules
 	@touch $(app)/bower_components $(www)/node_modules
 
@@ -59,15 +61,20 @@ $(dist): static prereq
 build: $(dist)
 
 ## deployment
-deploy: build
-	$(rsync) $(dist)/ $(ssh_host):$(ssh_dir)/
-	ssh $(ssh_host) 'chmod -R 755 $(ssh_dir)'
+submodule:
+	-git submodule add $(gh_pages_repo) $(gh_pages_dir)
+	git submodule update $(gh_pages_dir)
 
-clean-remote:
-	ssh $(ssh_host) 'rm -r $(ssh_dir)/*'
+deploy: build submodule
+	$(rsync) $(dist)/ $(gh_pages_dir)/
+	cd $(gh_pages_dir) && git add .
+	cd $(gh_pages_dir) && git commmit -am 'Makefile commit, rev $(revision)'
+	cd $(gh_pages_dir) && git push origin master
 
-.PHONY: deploy clean-remote
+.DEFAULT: deploy
+# .PHONY: deploy
 ####
+
 clean: clean-static
 	@-rm -rf $(www)/.sass-cache $(www)/.tmp $(dist)
 	git clean -xdf $(www)
