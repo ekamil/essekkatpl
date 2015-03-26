@@ -184,10 +184,19 @@
                         <h3>apt</h3>
                         <p>Id: <code>90EB7B11</code>, fingerprint: 
                         <code>9EFF 6095 D11E AD02 4BA2  C481 BB18 ADA7 90EB 7B11</code> </p>
-                        <p>Dopisanie do apt:
+                        <p>Dopisanie do apt:<br />
                         <code>
                             wget https://dl.dropboxusercontent.com/u/3490992/riC8quee_debian/debian.asc -O - | apt-key add -
-                        </code></p>
+                        </code>
+                        </p>
+                        <p>
+                        <code>
+                            deb https://dl.dropboxusercontent.com/u/3490992/riC8quee_debian squeeze main non-free
+                        </code><br />
+                        <code>
+                            deb-src https://dl.dropboxusercontent.com/u/3490992/riC8quee_debian squeeze main non-free
+                        </code><br />
+                        </p>
                         <a class="btn btn-info btn-sm" role="button" href="files/debian.asc">Pobierz</a>
                         <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
                                         id="pubkey-apt">Pokaż klucz</button>
