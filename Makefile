@@ -16,8 +16,6 @@ standalone = $(foreach l, $(langs), $(app)/cv-$(l).s.html)
 files = $(foreach f, $(formats), $(foreach l, $(langs), $(app)/files/cv-$(l).$(f) ) )
 gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc $(app)/files/mobile.asc
 
-rsync := rsync --delete-before -r
-
 
 ## default target
 default: deploy
@@ -70,7 +68,7 @@ deploy: build
 
 	cd $(gh_pages_dir) && git checkout master
 
-	$(rsync) $(dist)/ $(gh_pages_dir)/
+	rsync -r $(dist)/ $(gh_pages_dir)/
 
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
