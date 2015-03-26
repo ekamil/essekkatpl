@@ -56,8 +56,10 @@ prereq: $(app)/bower_components $(www)/node_modules
 $(dist): static prereq
 	cd $(www) && grunt build
 
+build: $(dist)
+
 ## deployment
-deploy: $(dist)
+deploy: build
 	$(rsync) $(dist)/ $(ssh_host):$(ssh_dir)/
 	ssh $(ssh_host) 'chmod -R 755 $(ssh_dir)'
 
