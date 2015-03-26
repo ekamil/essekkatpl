@@ -1,5 +1,8 @@
-sources := cv-pl.rst cv-en.rst
+langs = pl en
 formats = pdf html latex docx s.html
+
+sources = $(foreach l, $(langs), cv-$(l).rst)
+
 out := $(PWD)
 
 PDF_OPT  = --compressed
