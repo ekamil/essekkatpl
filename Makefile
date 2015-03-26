@@ -63,18 +63,19 @@ build: $(dist)
 ## deployment
 submodule:
 	-git submodule add $(gh_pages_repo) $(gh_pages_dir)
-	git submodule update $(gh_pages_dir)
+	git submodule update --init $(gh_pages_dir)
 
 deploy: build submodule
 	$(rsync) $(dist)/ $(gh_pages_dir)/
 	$(MAKE) commit
+	-git commit -m'(auto) Update rev in submodule' $(gh_pages_dir)
 
 commit:
 	git submodule update $(gh_pages_dir)
 	cd $(gh_pages_dir) && git checkout master
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
-	#cd $(gh_pages_dir) && git push origin master
+	cd $(gh_pages_dir) && git push
 
 .PHONY: deploy
 ####
