@@ -70,9 +70,11 @@ deploy: build submodule
 	$(MAKE) commit
 
 commit:
+	git submodule update $(gh_pages_dir)
+	cd $(gh_pages_dir) && git checkout master
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
-	cd $(gh_pages_dir) && git push origin master
+	#cd $(gh_pages_dir) && git push origin master
 
 .PHONY: deploy
 ####
