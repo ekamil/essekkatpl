@@ -67,15 +67,14 @@ submodule:
 
 deploy: build submodule
 	$(rsync) $(dist)/ $(gh_pages_dir)/
-	$(make) commit
+	$(MAKE) commit
 
 commit:
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
 	cd $(gh_pages_dir) && git push origin master
 
-.DEFAULT: deploy
-# .PHONY: deploy
+.PHONY: deploy
 ####
 
 clean: clean-static
