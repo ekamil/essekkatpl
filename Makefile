@@ -28,22 +28,24 @@ cv:
 	cd resume && make langs='$(langs)' formats='$(formats)' out=$(app)/files
 	cd resume && make langs='$(langs)' formats=s.html out=$(app)
 
-.PHONY: cv
+$(standalone): cv
+	@touch $(standalone)
 
-gpg:
+$(files): cv
+	@touch $(files)
+
+$(gpg):
 	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc
 	gpg --export --armor 6AEEC2FD > $(app)/files/mobile.asc
 	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc
 
-.PHONY: gpg
-
-static: cv gpg
+static: $(standalone) $(cv) $(gpg)
 	@touch  $(standalone) $(files) $(gpg)
 
 clean-static:
 	-rm  $(standalone) $(files) $(gpg)
 
-.PHONY: static clean-static
+.PHONY: clean-static
 #### prerequisites for build
 $(www)/node_modules:
 	cd $(www) && npm install
@@ -61,21 +63,20 @@ $(dist): static prereq
 build: $(dist)
 
 ## deployment
-submodule:
+
+deploy: build
 	-git submodule add $(gh_pages_repo) $(gh_pages_dir)
 	git submodule update --init $(gh_pages_dir)
 
-deploy: build submodule
-	$(rsync) $(dist)/ $(gh_pages_dir)/
-	$(MAKE) commit
-	-git commit -m'(auto) Update rev in submodule' $(gh_pages_dir)
-
-commit:
-	git submodule update $(gh_pages_dir)
 	cd $(gh_pages_dir) && git checkout master
+
+	$(rsync) $(dist)/ $(gh_pages_dir)/
+
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
 	cd $(gh_pages_dir) && git push
+
+	-git commit -m'(auto) Update rev in submodule' $(gh_pages_dir)
 
 .PHONY: deploy
 ####
