@@ -24,7 +24,13 @@ Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 Work experience
 ---------------
 
-**since 05.2014: Cyfrowy Polsat** - Python programmer
+**since 05.2014: Cyfrowy Polsat** –  Python&Java developer
+
+- Producing brand new payments application for IPLA
+- Architecture design, requirements gathering
+- Major components in technology stack: Spring, Axon Framework, Hibernate 4.
+
+**since 05.2014: Cyfrowy Polsat** –  Python programmer
 
 - Planning and creating new payment-processing application
 - Designing architecture for availability and maintainability
