@@ -24,7 +24,7 @@ Dane osobowe
 Doświadczenie
 -------------
 
-**od 05.2014: Cyfrowy Polsat** - programista Python
+**od 05.2014: Cyfrowy Polsat** - software developer
 
 - Planowanie, projektowanie i tworzenie nowej aplikacji do przetwarzania płatności
 - Integracja z systemami wewnętrznymi i zewnętrznymi

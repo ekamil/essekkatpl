@@ -24,24 +24,27 @@ Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 Work experience
 ---------------
 
-**since 05.2014: Cyfrowy Polsat** –  Python&Java developer
+**since 05.2014: Cyfrowy Polsat** –  Software Developer
 
-- Producing brand new payments application for IPLA
-- Architecture design, requirements gathering
-- Major components in technology stack: Spring, Axon Framework, Hibernate 4.
+A. Green-field development of payments gateway for a new VOD portal
 
-**since 05.2014: Cyfrowy Polsat** –  Python programmer
+    - Initial domain modelling and requirements gathering
+    - Planning integrations with other systems
+    - Architecture design and technology decisions
+    - Major components in stack: Camunda BPM, Spring, Axon Framework, Hibernate
+    - Introducing BPM software in a team
+    - Tech leading of a few developers
+    - Dockerization
 
-- Planning and creating new payment-processing application
-- Designing architecture for availability and maintainability
-- Integrating with both external and internal systems
-- Piloting use of Event Sourcing and Domain Driven Design
-- Documenting processes in BPMN, keeping documentation up-to-date
-- Automating tests in SoapUI for JSON-RPC and SOAP interfaces
-- Working on a sizeable Django-based backend system
-- Performance tuning of new features - on application and DB levels
-- Maintaining quality of the code (unittests, pep8 compliance)
-- Taking care of Jenkins CI jobs
+B. Working on a sizeable Django-based backend
+
+    - Leading the use of Event Sourcing and Domain Driven Design
+    - Documenting processes in BPMN
+    - Creating automated tests with SoapUI for JSON-RPC and SOAP interfaces
+    - Performance tuning of new features - on application and DB levels
+    - Maintaining quality of the code (unittests, pep8 compliance)
+    - Streamlining Jenkins CI jobs
+    - Taking care of current issues on a live system
 
 **10.2010 - 04.2014: Accenture** – member of Technical Architecture Team
 
@@ -112,25 +115,25 @@ Skills
 ------------
 
 Programming languages
-    Python, sh, SQL, Java, PL/SQL, Lua
+    Java, Python, sh, SQL, PL/SQL, Lua
 
 Operating systems
     GNU/Linux, Windows, AIX
 
 Code management/Development
-    Redmine, Trac, Git, SVN, `Jenkins CI <http://jenkins-ci.org/>`_,
+    Git, SVN, `Jenkins CI <http://jenkins-ci.org/>`_,
     `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Databases
-    Oracle, PostgreSQL, Redis, ElasticSearch
+    PostgreSQL,Oracle, Redis, ElasticSearch
 
 Load testing
-    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR, SoapUI
+    SoapUI, `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
 
 Other
     OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
-    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
+    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_, Docker
 
 Basic knowledge of *SAP* and *Oracle BRM* from operations perspective.
 
