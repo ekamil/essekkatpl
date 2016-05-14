@@ -161,9 +161,10 @@
                     </div>
 
                     <div  class="tab-pane" id="gpg">
-                        <h3>mail</h3>
-                        <p>ID aktualnego klucza to <code>598C2A2D</code>, fingerprint: 
-                        <code>7B60 0895 08F7 40BE 59D0 487F 696E AE84 598C 2A2D</code> </p>
+                        <h3>Mail - główny</h3>
+
+                        <p>ID aktualnego klucza to <code>76570E36 </code>, fingerprint:
+                        <code>7875 A6FB BDC7 5034 3556  EE73 9767 3057 7657 0E36</code> </p>
                         <a class="btn btn-info btn-sm" role="button" href="files/kamil_e.asc">Pobierz</a>
                         <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
                                         id="pubkey" >Pokaż klucz</button>
@@ -172,8 +173,8 @@
                                     readonly="readonly"></textarea>
                         </div>
                         <h3>mobile</h3>
-                        <p>ID aktualnego klucza to <code>6AEEC2FD</code>, fingerprint: 
-                        <code>1E0B D9D3 B6E0 3447 1B93 76CC C3C0 AABC 6AEE C2FD</code> </p>
+                        <p>ID aktualnego klucza to <code>968FBB1A</code>, fingerprint:
+                        <code>EAD1 2532 C487 D7B0 82B4  4E8A 4EBF 3756 968F BB1A</code> </p>
                         <a class="btn btn-info btn-sm" role="button" href="files/mobile.asc">Pobierz</a>
                         <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
                                         id="pubkey-mobile" >Pokaż klucz</button>
@@ -182,8 +183,8 @@
                                     readonly="readonly"></textarea>
                         </div>
                         <h3>apt</h3>
-                        <p>Id: <code>90EB7B11</code>, fingerprint: 
-                        <code>9EFF 6095 D11E AD02 4BA2  C481 BB18 ADA7 90EB 7B11</code> </p>
+                        <p>Id: <code>6A1CA097</code>, fingerprint: 
+                        <code>3236 DD52 B2D0 42D7 A59A  1FE7 1FD4 F123 6A1C A097</code> </p>
                         <p>Dopisanie do apt:<br />
                         <code>
                             wget https://dl.dropboxusercontent.com/u/3490992/riC8quee_debian/debian.asc -O - | apt-key add -
@@ -200,6 +201,15 @@
                         <a class="btn btn-info btn-sm" role="button" href="files/debian.asc">Pobierz</a>
                         <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
                                         id="pubkey-apt">Pokaż klucz</button>
+                            <textarea rows="10" cols="69" 
+                                    class="target pre-scrollable" 
+                                    readonly="readonly"></textarea>
+                        </div>
+                        <h3>Zmiana kluczy</h3>
+                        <p>Poprzednie klucze są deprecated. Podpisany dowód poniżej.</p>
+                        <a class="btn btn-info btn-sm" role="button" href="files/transition_2016-05-14-signed.txt">Pobierz</a>
+                        <div class="hidden-xs"> Lub <button class="btn btn-info btn-sm hidden-xs"
+                                        id="pubkey-mobile" >Pokaż klucz</button>
                             <textarea rows="10" cols="69" 
                                     class="target pre-scrollable" 
                                     readonly="readonly"></textarea>

@@ -33,9 +33,9 @@ $(files): cv
 	@touch $(files)
 
 $(gpg):
-	gpg --export --armor 598C2A2D > $(app)/files/kamil_e.asc
-	gpg --export --armor 6AEEC2FD > $(app)/files/mobile.asc
-	gpg --export --armor 90EB7B11 > $(app)/files/debian.asc
+	gpg --export --armor 76570E36 > $(app)/files/kamil_e.asc
+	gpg --export --armor 968FBB1A > $(app)/files/mobile.asc
+	gpg --export --armor 6A1CA097 > $(app)/files/debian.asc
 
 static: $(standalone) $(cv) $(gpg)
 	@touch  $(standalone) $(files) $(gpg)

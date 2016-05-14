@@ -1,0 +1,103 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Key transition statement
+=========================
+
+General
+- -------
+This note is effective as of 2016-05-16 21:00 CEST.
+
+Current keys
+- ------------
+Main source of trust is a key with ID 76570E36.
+Key fingerprint = 7875 A6FB BDC7 5034 3556  EE73 9767 3057 7657 0E36
+
+For apt packages use: 6A1CA097 
+Key fingerprint = 3236 DD52 B2D0 42D7 A59A  1FE7 1FD4 F123 6A1C A097
+
+I may use 968FBB1A but only for signing content from my mobile.
+Key fingerprint = EAD1 2532 C487 D7B0 82B4  4E8A 4EBF 3756 968F BB1A
+
+
+Deprecations
+- ------------
+Keys with following IDs are hereby deprecated and must not be used; neither use them when encrypting messages for me* nor trust messages signed with them**.
+It will be signed by new master key and as many other I can find and posted on http://essekkat.pl.
+
+Deprecated IDs:
+ 1. 2F92CB41
+ 2. 59DBB2B9
+ 3. E1F8E4FC
+ 4. 6AEEC2FD
+ 5. 90EB7B11
+ 6. 598C2A2D
+ 7. 691E0AAA
+ 8. 06596EF6
+
+
+* I won't be able to decrypt them, as the corresponding private keys are removed.
+** You should remove them from your trusted list.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+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
+=7BUU
+-----END PGP SIGNATURE-----
