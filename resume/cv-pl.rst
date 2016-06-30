@@ -24,7 +24,12 @@ Dane osobowe
 Doświadczenie
 -------------
 
-**od 05.2014: Cyfrowy Polsat** - software developer
+**since 05.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
+
+- Ewaluacja wydajności produktu opartego na Java EE
+- Rozwój wewnętrznych narzędzi (Java)
+
+**05.2014 - 04.2016: Cyfrowy Polsat** –  Software Developer
 
 - Planowanie, projektowanie i tworzenie nowej aplikacji do przetwarzania płatności
 - Integracja z systemami wewnętrznymi i zewnętrznymi
@@ -54,6 +59,8 @@ Doświadczenie
 
 Freelance
 ---------
+
+Kilka opartych na Django, krótko żyjączych projektów.
 
 **2014: Catland.pl, Pandaland.pl**
 
@@ -96,8 +103,6 @@ Języki obce
 +-----------------+--------------+
 | **Niemiecki**   | podstawowy   |
 +-----------------+--------------+
-| **Norweski**    | podstawowy   |
-+-----------------+--------------+
 
 Umiejętności
 ------------
@@ -120,7 +125,7 @@ Testy wydajnościowe
     `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR, SoapUI
 
 Pozostałe
-    OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
+    Docker, OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
     Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
 
 Podstawowa znajomość *SAP* oraz *Oracle BRM* od strony instalacji i

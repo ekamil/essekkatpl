@@ -24,7 +24,12 @@ Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 Work experience
 ---------------
 
-**since 05.2014: Cyfrowy Polsat** –  Software Developer
+**since 05.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
+
+- Evaluating performance of a Java EE product
+- Development of internal Java based tools
+
+**05.2014 - 04.2016: Cyfrowy Polsat** –  Software Developer
 
 A. Green-field development of payments gateway for a new VOD portal
 
@@ -66,6 +71,9 @@ B. Working on a sizeable Django-based backend
 
 Freelance work
 --------------
+
+Couple of short-lived Django based projects.
+
 **2014: Catland.pl, Pandaland.pl**
 
 - Django backend
@@ -100,15 +108,15 @@ Education
 2006 – 2009
     VI High school in Sosnowiec, core subjects: maths, geography
 
-Foreign languages
+Spoken languages
 ------------------
 
++-----------------+--------------+
+| **Polish**      | native       |
 +-----------------+--------------+
 | **English**     | fluent       |
 +-----------------+--------------+
 | **German**      | basic        |
-+-----------------+--------------+
-| **Norwegian**   | basic        |
 +-----------------+--------------+
 
 Skills
@@ -132,10 +140,10 @@ Load testing
     SoapUI, `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
 
 Other
-    OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
-    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_, Docker
+    Docker, OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
+    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
 
-Basic knowledge of *SAP* and *Oracle BRM* from operations perspective.
+Basic knowledge of *SAP* from operations perspective.
 
 Academic activity
 ---------------------
