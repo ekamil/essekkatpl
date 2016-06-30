@@ -12,3 +12,4 @@ resume/cv-*.*
 resume/cv-*.s.*
 
 !resume/cv-*.rst
+node_modules
