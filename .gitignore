@@ -7,3 +7,8 @@ www/dist
 www/app/bower_components
 www/app/files/cv-*
 www/app/cv-*.s.html
+
+resume/cv-*.*
+resume/cv-*.s.*
+
+!resume/cv-*.rst
