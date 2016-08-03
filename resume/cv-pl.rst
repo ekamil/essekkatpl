@@ -106,7 +106,7 @@ Umiejętności
 ------------
 
 Języki programowania
-    Python, sh, SQL, Java, PL/SQL, Lua
+    Java, Python, sh, SQL, PL/SQL, Lua
 
 Systemy operacyjne
     GNU/Linux, Windows, AIX

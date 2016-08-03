@@ -132,7 +132,7 @@ Code management/Development
     `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
 
 Databases
-    PostgreSQL,Oracle, Redis, ElasticSearch
+    PostgreSQL, Oracle, Redis, ElasticSearch
 
 Load testing
     SoapUI, `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
