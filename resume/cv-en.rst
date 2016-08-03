@@ -6,8 +6,6 @@ Personal
 +------------------+---------------------------------------------------+
 | Date of birth    | 16.03.1990                                        |
 +------------------+---------------------------------------------------+
-| Phone            | +48 501 196 255                                   |
-+------------------+---------------------------------------------------+
 | E-mail           | kamil@essekkat.pl                                 |
 +------------------+---------------------------------------------------+
 
@@ -24,10 +22,10 @@ Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 Work experience
 ---------------
 
-**since 05.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
+**05.2016 - 07.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
 
 - Evaluating performance of a Java EE product
-- Development of internal Java based tools
+- Development of internal, Java based tool
 
 **05.2014 - 04.2016: Cyfrowy Polsat** –  Software Developer
 

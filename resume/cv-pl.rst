@@ -6,8 +6,6 @@ Dane osobowe
 +------------------+---------------------------------------------------+
 | Data urodzenia   | 16.03.1990                                        |
 +------------------+---------------------------------------------------+
-| Tel.             | +48 501 196 255                                   |
-+------------------+---------------------------------------------------+
 | E-mail           | kamil@essekkat.pl                                 |
 +------------------+---------------------------------------------------+
 
@@ -24,7 +22,7 @@ Dane osobowe
 Doświadczenie
 -------------
 
-**since 05.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
+**05.2016 - 07.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
 
 - Ewaluacja wydajności produktu opartego na Java EE
 - Rozwój wewnętrznych narzędzi (Java)
