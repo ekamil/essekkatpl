@@ -14,7 +14,7 @@ app=$(PWD)/www/app
 
 standalone = $(foreach l, $(langs), $(app)/cv-$(l).s.html)
 files = $(foreach f, $(formats), $(foreach l, $(langs), $(app)/files/cv-$(l).$(f) ) )
-gpg = $(app)/files/kamil_e.asc $(app)/files/debian.asc $(app)/files/mobile.asc
+gpg = $(app)/files/kamil_e.asc
 
 
 ## default target
@@ -34,8 +34,6 @@ $(files): cv
 
 $(gpg):
 	gpg --export --armor 76570E36 > $(app)/files/kamil_e.asc
-	gpg --export --armor 968FBB1A > $(app)/files/mobile.asc
-	gpg --export --armor 6A1CA097 > $(app)/files/debian.asc
 
 static: $(standalone) $(cv) $(gpg)
 	@touch  $(standalone) $(files) $(gpg)

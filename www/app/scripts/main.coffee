@@ -29,11 +29,11 @@ class GPGButton extends ButtonGetter
 
     activate: ->
         super
-        @trigger.html("Ukryj klucz")
+        @trigger.html("Ukryj")
 
     deactivate: ->
         super
-        @trigger.html("Pokaż klucz")
+        @trigger.html("Pokaż")
 
     listen: ->
         super
@@ -111,7 +111,6 @@ $('textarea.target').on 'click', (event) ->
 
 
 (new GPGButton $('#pubkey'), 'files/kamil_e.asc').listen()
-(new GPGButton $('#pubkey-apt'), 'files/debian.asc').listen()
-(new GPGButton $('#pubkey-mobile'), 'files/mobile.asc').listen()
+(new GPGButton $('#pubkey-transition'), 'files/transition_2016-05-14-signed.txt').listen()
 (new CVTab('cv-pl')).listen()
 (new CVTab('cv-en')).listen()
