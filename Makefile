@@ -18,7 +18,7 @@ gpg = $(app)/files/kamil_e.asc
 
 
 ## default target
-default: deploy
+default: build deploy
 
 
 #### generate static files
@@ -60,7 +60,7 @@ build: $(dist)
 
 ## deployment
 
-deploy: build
+deploy:
 	-git submodule add $(gh_pages_repo) $(gh_pages_dir)
 	git submodule update --init $(gh_pages_dir)
 
@@ -70,7 +70,7 @@ deploy: build
 
 	cd $(gh_pages_dir) && git add .
 	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
-	cd $(gh_pages_dir) && git push
+	cd $(gh_pages_dir) && git push origin master
 
 	-git commit -m'(auto) Update rev in submodule' $(gh_pages_dir)
 
