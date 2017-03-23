@@ -22,10 +22,16 @@ Source: `http://essekkat.pl/#cv-en <http://essekkat.pl/#cv-en>`_
 Work experience
 ---------------
 
+**since 09.2016: Webinterpret** - Python Developer
+
+- Development of Python microservices
+- Mongo DB, Postgres DB
+- Designing and implementing new services
+
 **05.2016 - 07.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
 
 - Evaluating performance of a Java EE product
-- Development of internal, Java based tool
+- Development of internal, Java based tools for perf. testing
 
 **05.2014 - 04.2016: Cyfrowy Polsat** –  Software Developer
 
@@ -67,35 +73,6 @@ B. Working on a sizeable Django-based backend
 - Integrating OpenLDAP onto existing project's infrastructure with continued service availability
 - Working closely with Development and Test teams on adjusting the development/release process
 
-Freelance work
---------------
-
-Couple of short-lived Django based projects.
-
-**2014: Catland.pl, Pandaland.pl**
-
-- Django backend
-- Implementing client's vision of the frontend using HTML, Sass and CoffeeScript
-- Automation of deployment on Amazon EC2
-- Performance tuning on both backend and frontend site
-
-**2014: ZjedzmyRazem.pl**
-
-- Writing backend using Django
-- Integration with third-party layout
-
-**2010: wcinamy.pl**
-
-Wcinamy.pl was meant to help find restaurants in a distance-aware way.
-Note: site as written by me is now defunct
-
-- Creating Django site from scratch including static parts (HTML/CSS/JS)
-- Integrating Google Maps JavaScript API
-- Setting up Subversion with Trac
-- Collecting and implementing change requests from other team members
-- Formalizing requirements and development process
-
-
 Education
 -------------
 
@@ -121,25 +98,21 @@ Skills
 ------------
 
 Programming languages
-    Java, Python, sh, SQL, PL/SQL, Lua
+    Java, Python, sh, SQL, `Kotlin <https://kotlinlang.org/>`_
 
-Operating systems
-    GNU/Linux, Windows, AIX
+Notable frameworks
+    `Spring <http://spring.io/>`_, `Axon <http://www.axonframework.org/>`_, `Camunda <https://camunda.org/>`_, `Django <https://www.djangoproject.com/>`_
 
-Code management/Development
-    Git, SVN, `Jenkins CI <http://jenkins-ci.org/>`_,
-    `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
-    `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
+Tools
+    Jira, Git, SVN, `Jenkins CI <https://jenkins.io/>`_,
+    `SonarQube <http://www.sonarqube.org/>`_, Maven, Tox
+    `Docker <https://www.docker.com/>`_, `Wildfly <http://wildfly.org/>`_
 
 Databases
-    PostgreSQL, Oracle, Redis, ElasticSearch
+    PostgreSQL, Oracle, ElasticSearch, Redis
 
 Load testing
-    SoapUI, `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR
-
-Other
-    Docker, OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
-    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
+    SoapUI, `Gatling <http://gatling.io/>`_, Oracle AWR
 
 Basic knowledge of *SAP* from operations perspective.
 

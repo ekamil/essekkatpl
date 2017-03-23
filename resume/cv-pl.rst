@@ -22,10 +22,16 @@ Dane osobowe
 Doświadczenie
 -------------
 
+**od 09.2016: Webinterpret** - Python Developer
+
+- Rozwój i utrzymanie mikroserwisów w Pythonie
+- Mongo DB, Postgres DB
+- Projektowanie i implementacja nowych aplikacji
+
 **05.2016 - 07.2016: Clear2Pay Poland** - Non-Functional/Performance Engineer
 
 - Ewaluacja wydajności produktu opartego na Java EE
-- Rozwój wewnętrznych narzędzi (Java)
+- Rozwój wewnętrznych narzędzi do testów EFF (Java)
 
 **05.2014 - 04.2016: Cyfrowy Polsat** –  Software Developer
 
@@ -55,33 +61,6 @@ Doświadczenie
 - Integracja zewnętrznych systemów CI, QA z infrastrukturą projektów
 - Integracja OpenLdap z infrastrukturą projektów
 
-Freelance
----------
-
-Kilka opartych na Django, krótko żyjączych projektów.
-
-**2014: Catland.pl, Pandaland.pl**
-
-- Backend w Django
-- Implementacja frontendu na podstawie projektu graficznego
-- Wdrożenie z użyciem Amazon EC2 i CloudFront
-- Tuning wydajności (również zagadnienia wyłączeni frontendowe)
-
-**2014: ZjedzmyRazem.pl**
-
-- Backend w Django
-- Integracja z dostarczonym frontendem
-
-**2010: wcinamy.pl** – developer Python oraz JavaScript
-
-Tworzenie wyszukiwarki punktów gastronomicznych opartej o Django.
-
-- Utworzenie strony w Django wraz z frontendem (HTML/CSS/JS)
-- Integracja z API Google Maps
-- Setup narzędzi do zarządzania kodem: Subversion+Trac
-- Uporządkowanie procesu zarządzania zmianą
-
-
 Wykształcenie
 -------------
 
@@ -106,28 +85,23 @@ Umiejętności
 ------------
 
 Języki programowania
-    Java, Python, sh, SQL, PL/SQL, Lua
+    Java, Python, sh, SQL, `Kotlin <https://kotlinlang.org/>`_
 
-Systemy operacyjne
-    GNU/Linux, Windows, AIX
+Znaczące frameworki
+    `Spring <http://spring.io/>`_, `Axon <http://www.axonframework.org/>`_, `Camunda <https://camunda.org/>`_, `Django <https://www.djangoproject.com/>`_
 
-Zarządzanie kodem
-    Redmine, Trac, Git, SVN, Mercurial, `Jenkins CI <http://jenkins-ci.org/>`_,
-    `Sonatype Nexus <http://www.sonatype.org/nexus/>`_,
-    `SonarQube <http://www.sonarqube.org/>`_, Maven, Ant
+Narzędzia
+    Jira, Git, SVN, `Jenkins CI <https://jenkins.io/>`_,
+    `SonarQube <http://www.sonarqube.org/>`_, Maven, Tox,
+    `Docker <https://www.docker.com/>`_, `Wildfly <http://wildfly.org/>`_
 
 Bazy danych
-    Oracle, PostgreSQL, Redis, ElasticSearch
+    PostgreSQL, Oracle, ElasticSearch, Redis
 
 Testy wydajnościowe
-    `Grinder <http://grinder.sourceforge.net/>`_, Oracle AWR, SoapUI
+    SoapUI, `Gatling <http://gatling.io/>`_, Oracle AWR
 
-Pozostałe
-    Docker, OpenLdap, WebMethods Integration Server, Wildfly/JBoss, Tomcat, Red Hat
-    Cluster Suite, `Zenoss <http://www.zenoss.com/>`_
-
-Podstawowa znajomość *SAP* oraz *Oracle BRM* od strony instalacji i
-konfiguracji środowisk testowych.
+Podstawowa znajomość *SAP* od strony instalacji i konfiguracji.
 
 Działalność studencka
 ---------------------
