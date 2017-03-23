@@ -26,6 +26,8 @@ cv:
 	cd resume && make langs='$(langs)' formats='$(formats)' out=$(app)/files
 	cd resume && make langs='$(langs)' formats=s.html out=$(app)
 
+.PHONY: cv
+
 $(standalone): cv
 	@touch $(standalone)
 
@@ -69,7 +71,7 @@ deploy:
 	rsync -r $(dist)/ $(gh_pages_dir)/
 
 	cd $(gh_pages_dir) && git add .
-	cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
+	-cd $(gh_pages_dir) && git commit -am 'Makefile commit, rev $(revision)'
 	cd $(gh_pages_dir) && git push origin master
 
 	-git commit -m'(auto) Update rev in submodule' $(gh_pages_dir)
@@ -80,4 +82,6 @@ deploy:
 clean: clean-static
 	@-rm -rf $(www)/.sass-cache $(www)/.tmp $(dist)
 	git clean -xdf $(www)
+	cd resume && make clean
+
 .PHONY: clean
